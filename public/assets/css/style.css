@@ -10,16 +10,31 @@ body {
     sans-serif;
     font-weight:300;
     font-style:normal;
-}.room-card{
-  box-shadow:04px8pxrgba(0,0,0,0.2);
+}
+.room-card{
+  box-shadow:4px 8px rgba(0,0,0,0.2);
   border-radius:8px;
-}.galleryimg{
+}
+.galleryimg{
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
 nav ul li .active {
   background-color: #F3F4F6;
-  padding: 10px 50px;
-  border-radius: 40%;
+  padding: 10px 20px;
+  border-radius: 45%;
+}
+
+nav ul li .nav-link {
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 45%;
+}
+
+.navb-link {
+  display: flex;
+  gap: 50px;
 }

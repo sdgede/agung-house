@@ -8,9 +8,4 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
- 
-
-    <link rel="stylesheet" href="<?= base_url('AOS/dist/aos.js'); ?>">
-</head>
-<body>
 

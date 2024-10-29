@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('/room_detail', 'Home::room');
+$routes->get('/rooms', 'Home::room_detail');
 
 
 // Untuk Enable Akses Lewat URL
