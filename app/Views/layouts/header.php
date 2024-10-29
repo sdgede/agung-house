@@ -9,3 +9,8 @@
 </head>
 <body>
  
+
+    <link rel="stylesheet" href="<?= base_url('AOS/dist/aos.js'); ?>">
+</head>
+<body>
+
