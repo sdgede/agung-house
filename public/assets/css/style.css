@@ -20,21 +20,33 @@ body {
   object-fit: cover;
   border-radius: 8px;
 }
+
+nav ul li{
+  text-align: center;
+}
+
 nav ul li .active {
   background-color: #F3F4F6;
-  padding: 10px 20px;
-  border-radius: 45%;
+  margin:0  20px;
+  padding: 8px 50px;
+  border-radius: 30px;
 }
 
 nav ul li .nav-link {
   box-sizing: border-box;
   display: inline-block;
   width: fit-content;
-  padding: 10px 20px;
-  border-radius: 45%;
+  padding: 8px 50px;
+  border-radius: 40%;
 }
 
 .navb-link {
   display: flex;
-  gap: 50px;
+  gap: 30px;
+}
+
+.gallery {
+    display: grid; /* Use grid display */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column count based on screen size */
+    gap: 30px; /* Space between items */
 }

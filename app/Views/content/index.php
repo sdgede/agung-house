@@ -3,40 +3,34 @@
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-lg-8">
-            <div class="room-card p-3 mb-4">
-                <img
-                    src="main-room.jpg"
-                    alt="Main Room"
-                    class="img-fluid w-100 mb-2"
-                    style="border-radius: 8px;">
-                <button class="btn btn-outline-secondary btn-sm">Show all photos</button>
-            </div>
-            <div class="gallery d-flex gap-2 mb-4">
-                <img src="photo1.jpg" class="w-25">
-                <img src="photo2.jpg" class="w-25">
-                <img src="photo3.jpg" class="w-25">
-                <img src="photo4.jpg" class="w-25">
+        <div class="col-6">
+            <h1 class="fw-bold title" style="text-transform: capitalize; font-size:60px;">Feel the Comfort
+                <br>
+                of your Home
+                <br>with us</h1>
+
+            <div class="shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 18rem;">
+                <div class="card-title">
+                    <div class="d-flex">
+                        <h5 class="fs-6 fw-bold">Rp. 7.000.000</h5>
+                        <span style="font-size:12px;">
+                            /month</span>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="p-4 border rounded-3">
-                <h5>Villa Room</h5>
-                <h3>Room 1</h3>
-                <p>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    4.9 (122 reviews) • Tokyo, Japan</p>
-                <h4>$200
-                    <small>/night</small>
-                </h4>
-                <div class="d-flex justify-content-between mt-3">
-                    <span>Check in</span>
-                    <span>Check out</span>
+        <div class="col-6">
+            <div class="gallery">
+                <div class="gallery-item">
+                <img src="<?= base_url('assets/img/room.png'); ?>" alt="" width="200px">
+                <img src="<?= base_url('assets/img/window.png'); ?>" height="250px" alt="">
+               
+            </div>
+                <div class="gallery-item">
+                <img src="<?= base_url('assets/img/loby.png'); ?>" height="300px" alt="">
                 </div>
-                <div class="d-flex justify-content-between mt-1">
-                    <span>Aug 12</span>
-                    <span>Aug 18</span>
-                </div>
+                <!-- Add more items as needed -->
             </div>
         </div>
     </div>
