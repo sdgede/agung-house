@@ -1,27 +1,21 @@
-@import url(
-    'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0' +
-    ',400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1' +
-    ',800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1' +
-    ',300;1,400;1,500;1,700;1,900&display=swap'
-);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0" + ",400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1" + ",800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1" + ",300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-    font-family:"Poppins",
-    sans-serif;
-    font-weight:300;
-    font-style:normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
-.room-card{
-  box-shadow:4px 8px rgba(0,0,0,0.2);
-  border-radius:8px;
+.room-card {
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
-.galleryimg{
+.galleryimg {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
 nav ul li .active {
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
   padding: 10px 20px;
   border-radius: 45%;
 }
@@ -37,4 +31,47 @@ nav ul li .nav-link {
 .navb-link {
   display: flex;
   gap: 50px;
+}
+
+/* Rooms Page */
+
+.card-image {
+  width: 100%;
+  border-radius: 16px;
+  height: 520px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect to the background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.col-lg-7>.card-image>.rooms-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.col-lg-6 .card-image {
+  height: 255px;
+}
+.col-lg-6>.card-image>.rooms-image {
+  height: 100%;
+}
+
+.rooms-image:hover {
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
+.button-show-all-photos {
+  position: absolute;
+  bottom: 10;
+  left: 10;
 }
