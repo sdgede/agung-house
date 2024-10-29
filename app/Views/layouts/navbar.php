@@ -12,11 +12,11 @@
     <!-- Navbar content -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <!-- Centered Menu -->
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Rooms</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Benefits</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
+      <ul class="navbar-nav mx-auto navb-link">
+        <li class="nav-item"><a class="nav-link <?= $nav_selected == '1' ? 'active': ''; ?>" href="<?= base_url(''); ?>">Home</a></li>
+        <li class="nav-item"><a class="nav-link <?= $nav_selected == '2' ? 'active': ''; ?>" href="<?= base_url('rooms'); ?>">Rooms</a></li>
+        <li class="nav-item"><a class="nav-link <?= $nav_selected == '3' ? 'active': ''; ?>" href="<?= base_url('benefits'); ?>">Benefits</a></li>
+        <li class="nav-item"><a class="nav-link <?= $nav_selected == '4' ? 'active': ''; ?>" href="<?= base_url('testimonial'); ?>">Testimonial</a></li>
       </ul>
       
       <!-- Social Media Icons -->

@@ -5,5 +5,4 @@ include 'header.php'; ?>
 <?php include 'navbar.php' ?>
     <?= $this->renderSection('content'); ?>
 </main>
- 
 <?php include 'footer.php'; ?>

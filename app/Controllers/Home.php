@@ -6,11 +6,19 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('content/index');
+        $data = [
+            'nav_selected' => '1'
+        ];
+
+        return view('content/index', $data);
     }
 
     public function room_detail()
     {
-        return view('content/room_detail');
+        $data = [
+            'nav_selected' => '2'
+        ];
+
+        return view('content/room_detail', $data);
     }
 }
