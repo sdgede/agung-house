@@ -18,24 +18,67 @@ body {
   object-fit: cover;
   border-radius: 8px;
 }
+
+nav ul li{
+  text-align: center;
+}
+
 nav ul li .active {
-  background-color: #f3f4f6;
-  padding: 10px 20px;
-  border-radius: 45%;
+  background-color: #F3F4F6;
+  margin:0  20px;
+  padding: 8px 50px;
+  border-radius: 30px;
 }
 
 nav ul li .nav-link {
   box-sizing: border-box;
   display: inline-block;
   width: fit-content;
-  padding: 10px 20px;
-  border-radius: 45%;
+  padding: 8px 50px;
+  border-radius: 40%;
 }
 
 .navb-link {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
+
+
+/* img header */
+.header_img .room{
+  width: 250px;
+}
+.header_img .loby{
+  float: right;
+  margin-top:100px ;
+}
+
+
+ .input_none{
+  outline: none;
+  border: none;
+}
+
+.checkin{
+  text-align: center;
+  font-size:12px ;
+  border-radius: 10px 0 0 0;
+}
+.checkout{
+  text-align: center;
+  font-size:12px ;
+  border-radius: 0 10px 0 0;
+}
+.guest{
+  text-align: center;
+  font-size:12px ;
+  border-radius: 0 0 10px 10px;
+} 
+.btn_ku{
+  width: 260px;
+  background-color: --accent-color;
+}          
+
 
 /* Rooms Page -> Rooms Images*/
 
@@ -247,4 +290,3 @@ nav ul li .nav-link {
   color: #e02424;
 }
 
-/* More Page */
