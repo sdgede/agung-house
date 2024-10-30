@@ -45,8 +45,38 @@ nav ul li .nav-link {
   gap: 30px;
 }
 
-.gallery {
-    display: grid; /* Use grid display */
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column count based on screen size */
-    gap: 30px; /* Space between items */
+
+/* img header */
+.header_img .room{
+  width: 250px;
 }
+.header_img .loby{
+  float: right;
+  margin-top:100px ;
+}
+
+
+ .input_none{
+  outline: none;
+  border: none;
+}
+
+.checkin{
+  text-align: center;
+  font-size:12px ;
+  border-radius: 10px 0 0 0;
+}
+.checkout{
+  text-align: center;
+  font-size:12px ;
+  border-radius: 0 10px 0 0;
+}
+.guest{
+  text-align: center;
+  font-size:12px ;
+  border-radius: 0 0 10px 10px;
+} 
+.btn_ku{
+  width: 260px;
+  background-color: --accent-color;
+}          
