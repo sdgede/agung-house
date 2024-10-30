@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0" + ",400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1" + ",800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1" + ",300;1,400;1,500;1,700;1,900&display=swap");
 
+:root {
+  --accent-color: #FDC463;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -58,20 +62,60 @@ nav ul li .nav-link {
   width: 100%;
 }
 
-.col-lg-6 .card-image {
+.col-sm-6 .card-image {
   height: 255px;
 }
-.col-lg-6>.card-image>.rooms-image {
+
+.col-sm-6>.card-image>.rooms-image {
   height: 100%;
 }
 
 .rooms-image:hover {
   transform: scale(0.9);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.button-show-all-photos {
+.button-show-all-photos, .button-show-all-photos2 {
   position: absolute;
   bottom: 10;
   left: 10;
+  width: 180px;
+  height: 40px;
+  gap: 5px;
+  border-radius: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  text-decoration: none;
+  color: black;
+  background-color: whitesmoke;
 }
+
+.button-show-all-photos .rooms-icon, .button-show-all-photos2 .rooms-icon {
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.button-show-all-photos2 {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .col-sm-6 .card-image {
+    height: 520px;
+  }
+
+  .button-show-all-photos {
+    display: none;
+  }
+
+  .button-show-all-photos2 {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+  }
+}
+
+/* More Page */
