@@ -76,8 +76,20 @@ nav ul li .nav-link {
 } 
 .btn_ku{
   width: 260px;
-  background-color: --accent-color;
+  margin-top: 20px;
+  background: #FDC463;
 }          
+.btn_ku:hover{
+  background: #FDC463;
+  font-weight: bold;
+}          
+
+/* info room */
+#rooms .card{
+  border:none;
+}
+
+
 
 
 /* Rooms Page -> Rooms Images*/
