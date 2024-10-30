@@ -124,7 +124,82 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card"></div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="room-price">
+                            <h3 class="type-room m-0">$200 <span>/night</span></h3>
+                            <p class="m-0">
+                                <i class="fas fa-star rating-star"></i>
+                                4.9 <span>(122 riviews)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-reservation">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <i class="far fa-calendar"></i>
+                                    <div class="check-in">
+                                        <span>Check In</span>
+                                        <h5 class="m-0">Aug 12</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <i class="far fa-calendar"></i>
+                                    <div class="check-out">
+                                        <span>Check Out</span>
+                                        <h5 class="m-0">Aug 18</h5>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-lg-12">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="guests">
+                                        <span>Guests</span>
+                                        <h5 class="m-0">3 Guests</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="room-info">
+                                            <i class="fas fa-user"></i>
+                                            2 Guests
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="room-info">
+                                            <i class="fas fa-bed"></i>
+                                            1 Beds
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="room-info">
+                                            <i class="fas fa-bath"></i>
+                                            1 Baths
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="room-info">
+                                            <i class="fas fa-door-open"></i>
+                                            1 Bedrooms
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
