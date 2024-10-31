@@ -45,10 +45,6 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="button-show-all-photos2">
-                <i class="fas fa-image rooms-icon"></i>
-                <p class="m-0">Show all photos</p>
-            </a>
         </div>
     </section>
     <!-- End Room Image -->
@@ -57,6 +53,7 @@
     <section class="rooms-main">
         <div class="row rooms-main-row">
             <div class="col-lg-7">
+                <!-- Room Information -->
                 <div class="card">
                     <div class="card-header">
                         <div class="room-bedge">
@@ -122,7 +119,113 @@
                         </div>
                     </div>
                 </div>
+                <!-- Stay Information -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="stay-info-title m-0">Stay Information</h5>
+                    </div>
+                    <div class="card-body stay-info-body">
+                        Providing lake views, The Symphony 9 Tam Coc in Ninh Binh provides accommodation, an outdoor swimming pool, a bar, a shared lounge, a garden and barbecue facilities. Complimentary WiFi is provided.
+                        <br>
+                        <br>
+                        There is a private bathroom with bidet in all units, along with a hairdryer and free toiletries.
+                        <br>
+                        <br>
+                        The Symphony 9 Tam Coc offers a terrace.
+                        <br>
+                        <br>
+                        Both a bicycle rental service and a car rental service are available at the accommodation, while cycling can be enjoyed nearby.
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+
+                <!-- Amenities -->
+                <div class="card">
+                    <div class="card-header amenities-header">
+                        <h5 class="stay-info-title m-0">Amenities</h5>
+                        <p class="m-0">About the property's amenities and services</p>
+                    </div>
+                    <div class="card-body amenities-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <i class="fas fa-wifi"></i>
+                                Wifi
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="fas fa-tv"></i>
+                                Televition
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="far fa-air-conditioner"></i>
+                                Air Conditioner
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="far fa-pump-soap"></i>
+                                Shampoo, conditioner
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="fal fa-toilet-paper-alt"></i>
+                                Towel
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="far fa-tooth"></i>
+                                Toothpaste
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="fas fa-soap"></i>
+                                Soap
+                            </div>
+                            <div class="col-lg-4">
+                            <i class="fas fa-wind"></i>
+                                Hairdryer
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="far fa-router"></i>
+                                Internet
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="more-amenities-btn">
+                            View more 20 amenities
+                        </button>
+                    </div>
+                </div>
+                <!-- Room Rates -->
+                <div class="card">
+                    <div class="card-header amenities-header">
+                        <h5 class="stay-info-title m-0">Room Rates</h5>
+                        <p class="m-0">Prices may increase on weekends or holidays</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-rate-list">
+                            <div class="col-lg-12 active">
+                                <span>Daily</span>
+                                <span>$554</span>
+                            </div>
+                            <div class="col-lg-12">
+                                <span>Monthly</span>
+                                <span>$554</span>
+                            </div>
+                            <div class="col-lg-12 active">
+                                <span>Weekly</span>
+                                <span>$554</span>
+                            </div>
+                            <div class="col-lg-12">
+                                <span>Yearly</span>
+                                <span>$554</span>
+                            </div>
+                            <div class="col-lg-12 active">
+                                <span>Empty Field</span>
+                                <span>$554</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
             </div>
+
+            <!-- Col - 4 -->
             <div class="col-lg-4">
                 <div class="card">
                     <div class="card-header">
@@ -152,52 +255,56 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="col-lg-12">
+                                <div class="col-lg-6">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <div class="guests">
                                         <span>Guests</span>
                                         <h5 class="m-0">3 Guests</h5>
                                     </div>
                                 </div>
+                                <div class="col-lg-6">
+                                </div>
                             </div>
                         </div>
-                        <hr>
+                        <div class="total-price">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="service">
+                                        $200 x 3 night
+                                    </div>
+                                    <div class="price">
+                                        $600
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="service">
+                                        Service charge
+                                    </div>
+                                    <div class="price">
+                                        $0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-0">
+                        <div class="total-prices">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="service">
+                                        Total
+                                    </div>
+                                    <div class="price">
+                                        $600
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-footer">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="room-info">
-                                            <i class="fas fa-user"></i>
-                                            2 Guests
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="room-info">
-                                            <i class="fas fa-bed"></i>
-                                            1 Beds
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="room-info">
-                                            <i class="fas fa-bath"></i>
-                                            1 Baths
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="room-info">
-                                            <i class="fas fa-door-open"></i>
-                                            1 Bedrooms
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="https://wa.me/6282147836034?test=Booking%20Deluxe%20Room" class="booking-wa-button">
+                            <i class="fab fa-whatsapp"></i>
+                            Book Now
+                        </a>
                     </div>
                 </div>
             </div>
