@@ -24,7 +24,7 @@
       <div class="ms-3">
         <a href="#" class="me-2 fs-3"><i class="bi bi-facebook"></i></a>
         <a href="#" class="me-2 fs-3 text-danger"><i class="bi bi-youtube"></i></a>
-        <a href="#" class="me-2 fs-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="me-2 fs-3"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="#" class="fs-3"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
