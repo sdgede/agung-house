@@ -145,7 +145,7 @@
                         <h5 class="stay-info-title m-0">Amenities</h5>
                         <p class="m-0">About the property's amenities and services</p>
                     </div>
-                    <div class="card-body stay-info-body">
+                    <div class="card-body amenities-body">
                         <div class="row">
                             <div class="col-lg-4">
                                 <i class="fas fa-wifi"></i>
@@ -158,6 +158,66 @@
                             <div class="col-lg-4">
                                 <i class="far fa-air-conditioner"></i>
                                 Air Conditioner
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="far fa-pump-soap"></i>
+                                Shampoo, conditioner
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="fal fa-toilet-paper-alt"></i>
+                                Towel
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="far fa-tooth"></i>
+                                Toothpaste
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="fas fa-soap"></i>
+                                Soap
+                            </div>
+                            <div class="col-lg-4">
+                            <i class="fas fa-wind"></i>
+                                Hairdryer
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="far fa-router"></i>
+                                Internet
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="more-amenities-btn">
+                            View more 20 amenities
+                        </button>
+                    </div>
+                </div>
+                <!-- Room Rates -->
+                <div class="card">
+                    <div class="card-header amenities-header">
+                        <h5 class="stay-info-title m-0">Room Rates</h5>
+                        <p class="m-0">Prices may increase on weekends or holidays</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="room-rate-list">
+                            <div class="col-lg-12 active">
+                                <span>Daily</span>
+                                <span>$554</span>
+                            </div>
+                            <div class="col-lg-12">
+                                <span>Monthly</span>
+                                <span>$554</span>
+                            </div>
+                            <div class="col-lg-12 active">
+                                <span>Weekly</span>
+                                <span>$554</span>
+                            </div>
+                            <div class="col-lg-12">
+                                <span>Yearly</span>
+                                <span>$554</span>
+                            </div>
+                            <div class="col-lg-12 active">
+                                <span>Empty Field</span>
+                                <span>$554</span>
                             </div>
                         </div>
                     </div>

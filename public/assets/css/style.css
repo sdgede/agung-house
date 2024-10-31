@@ -258,11 +258,12 @@ nav ul li .nav-link {
 .rooms-main-row>.col-lg-7>.card>.amenities-header>p {
   color: gray;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .rooms-main-row>.col-lg-7>.card>.card-body>.stay-info-body {
   font-size: 16px;
-}
+} 
 
 .rooms-main-row > .col-lg-7 > .card > .card-body {
   padding: 0 25px;
@@ -282,6 +283,43 @@ nav ul li .nav-link {
   gap: 10px;
   align-items: center;
 }
+
+.rooms-main-row > .col-lg-7 > .card > .amenities-body > .row {
+  row-gap: 15px;
+}
+
+.rooms-main-row > .col-lg-7 > .card > .amenities-body > .row > .col-lg-4 {
+  font-size: 16px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rooms-main-row > .col-lg-7 > .card > .amenities-body > .row > .col-lg-4 > .i {
+  font-size: 26px;
+}
+
+.rooms-main-row > .col-lg-7 > .card > .card-body > .room-rate-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rooms-main-row > .col-lg-7 > .card > .card-body > .room-rate-list > .col-lg-12 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  color: gray;
+}
+
+.rooms-main-row > .col-lg-7 > .card > .card-body > .room-rate-list > .active {
+  background-color: #F3F4F6;
+}
+
 
 .rooms-main-row
   > .col-lg-7
@@ -328,6 +366,13 @@ nav ul li .nav-link {
   font-size: 14px;
   margin: 0;
   color: gray;
+}
+
+.rooms-main-row > .col-lg-7 > .card > .card-footer > .more-amenities-btn {
+  padding: 10px 20px;
+  border: 1px #e5e7eb solid;
+  border-radius: 36px;
+  background-color: #fff;
 }
 
 /* col - 4 */
