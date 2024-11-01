@@ -448,11 +448,15 @@ nav ul li .nav-link {
 }
 
 .rooms-main-row > .col-lg-7 > .card > .card-footer > .more-amenities-btn {
-  padding: 10px 20px;
+  padding: 11px 21px;
   border: 1px #e5e7eb solid;
   border-radius: 36px;
   background-color: #fff;
   color: #374151;
+}
+
+.rooms-main-row > .col-lg-7 > .card > .card-footer > .more-amenities-btn:hover {
+  font-size: 17px;
 }
 
 /* col - 4 */
@@ -712,6 +716,10 @@ nav ul li .nav-link {
   font-size: 20px;
   font-weight: 600;
   gap: 10px;
+}
+
+.booking-wa-button:hover {
+  font-size: 21px;
 }
 
 .booking-wa-button > .fa-whatsapp {
