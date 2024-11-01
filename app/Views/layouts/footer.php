@@ -53,18 +53,17 @@
 </section>
 
 
+
+
 <script src="<?= base_url('assets/js/bootstrap.bundle.js'); ?>"></script> 
 <script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script> 
 <script src="<?= base_url('AOS/src/js/aos.js'); ?>"></script> 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-  $(document).on('ready', function() {
-    // initialization of aos
-    AOS.init({
-      duration: 400, 
-      once: true
-});
+        AOS.init({
+            duration: 1000, // durasi animasi dalam milidetik
+            once: true // animasi hanya berjalan sekali
+        });
 </script>
 </body>
-
 </html>

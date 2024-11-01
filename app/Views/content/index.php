@@ -6,8 +6,8 @@
     <!-- header Section -->
     <header id="header">
         <div class="row">
-            <div class="col-lg-6" data-aos="fade-up">
-                <h1 class="fw-bold title" style="text-transform: capitalize; font-size:60px;" data-aos="fade-up">Feel
+            <div data-aos="fade-up" class=" col-lg-6">
+                <h1 class="fw-bold title" style="text-transform: capitalize; font-size:60px;">Feel
                     the Comfort
                     <br>
                     of your Home
@@ -16,15 +16,15 @@
 
                 <!-- harga -->
                 <div class="shadow px-4 py-4  bg-body-tertiary rounded" style="width:300px; margin-top:80px;"
-                    data-aos="fade-up">
+                >
                     <div class="card-header">
                         <div class="d-flex">
-                            <h5 class="fs-5 fw-bold" data-aos="fade-up">Rp. 7.000.000</h5>
+                            <h5 class="fs-5 fw-bold">Rp. 7.000.000</h5>
                             <span style="font-size:12px;">
                                 /month</span>
                         </div>
 
-                        <div class="card-bod text-center my-4 " data-aos="fade-up">
+                        <div class="card-bod text-center my-4 ">
                             <form action="" class="d-flex row  ">
                                 <div class="col-lg-6 checkin py-2 border">
                                     <label for="Check-in border border-3">Check-in</label>
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <!-- img header -->
-            <div class="col-lg-6 " data-aos="fade-up">
+            <div class="col-lg-6 ">
                 <div class="row">
                     <div class="col-lg-6">
                         <img class="mb-4" src="<?= base_url('assets/img/room.png'); ?>" width="100%" alt="picture">
@@ -76,9 +76,9 @@
     <!-- rooms section -->
     <section id="rooms" style=" margin-top:140px;">
         <div class="row">
-            <h3 class="fw-bold mb-3" data-aos="fade-up">Rooms Katalog</h3>
+            <h3 class="fw-bold mb-3">Rooms Katalog</h3>
             <div class="col-lg-6">
-                <div class="card" data-aos="fade-up">
+                <div class="card">
                     <img src="<?= base_url('assets/img/room.png'); ?>" class="card-img-top rounded-top" alt="picture"
                         height="380px">
                     <div class="card-body">
@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="card rounded-top" data-aos="fade-up">
+                <div class="card rounded-top">
                     <img src="<?= base_url('assets/img/window.png'); ?>" class="card-img-top" alt="picture"
                         height="380px">
                     <div class="card-body">
