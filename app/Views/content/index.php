@@ -7,18 +7,15 @@
     <header id="header">
         <div class="row">
             <div class="col-lg-6" data-aos="fade-up">
-                <h1
-                    class="fw-bold title"
-                    style="text-transform: capitalize; font-size:60px;"
-                    data-aos="fade-up">Feel the Comfort
+                <h1 class="fw-bold title" style="text-transform: capitalize; font-size:60px;" data-aos="fade-up">Feel
+                    the Comfort
                     <br>
                     of your Home
-                    <br>with us</h1>
+                    <br>with us
+                </h1>
 
                 <!-- harga -->
-                <div
-                    class="shadow px-4 py-4  bg-body-tertiary rounded"
-                    style="width:300px; margin-top:80px;"
+                <div class="shadow px-4 py-4  bg-body-tertiary rounded" style="width:300px; margin-top:80px;"
                     data-aos="fade-up">
                     <div class="card-header">
                         <div class="d-flex">
@@ -49,8 +46,7 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-12">
-                                    <a
-                                        href="https://api.whatsapp.com/send/?phone=6282147836034&text=tess"
+                                    <a href="https://api.whatsapp.com/send/?phone=6282147836034&text=tess"
                                         class="btn btn_ku">Book Now</a>
                                 </div>
                             </form>
@@ -63,19 +59,12 @@
             <div class="col-lg-6 " data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img
-                            class="mb-4"
-                            src="<?= base_url('assets/img/room.png'); ?>"
-                            width="100%"
-                            alt="picture">
+                        <img class="mb-4" src="<?= base_url('assets/img/room.png'); ?>" width="100%" alt="picture">
                         <img src="<?= base_url('assets/img/window.png'); ?>" alt="picture" width="100%">
 
                     </div>
                     <div class="col-6">
-                        <img
-                            style="margin-top:100px"
-                            src="<?= base_url('assets/img/loby.png'); ?>"
-                            alt="picture"
+                        <img style="margin-top:100px" src="<?= base_url('assets/img/loby.png'); ?>" alt="picture"
                             width="100%">
                     </div>
                 </div>
@@ -90,10 +79,7 @@
             <h3 class="fw-bold mb-3" data-aos="fade-up">Rooms Katalog</h3>
             <div class="col-lg-6">
                 <div class="card" data-aos="fade-up">
-                    <img
-                        src="<?= base_url('assets/img/room.png'); ?>"
-                        class="card-img-top rounded-top"
-                        alt="picture"
+                    <img src="<?= base_url('assets/img/room.png'); ?>" class="card-img-top rounded-top" alt="picture"
                         height="380px">
                     <div class="card-body">
                         <div class="row">
@@ -121,10 +107,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="card rounded-top" data-aos="fade-up">
-                    <img
-                        src="<?= base_url('assets/img/window.png'); ?>"
-                        class="card-img-top"
-                        alt="picture"
+                    <img src="<?= base_url('assets/img/window.png'); ?>" class="card-img-top" alt="picture"
                         height="380px">
                     <div class="card-body">
                         <div class="row">
@@ -160,19 +143,16 @@
     <section id="binefits" style="margin: 100px 0;">
         <div class="row">
             <div class="col-lg-6">
-                <img
-                    src="<?= base_url('assets/img/frot_view.png'); ?>"
-                    alt="Pictre"
-                    class=""
+                <img src="<?= base_url('assets/img/frot_view.png'); ?>" alt="Pictre" class=""
                     style="width: 100%;  height: 90vh; border-radius:  0px 50% 0 0;">
             </div>
 
             <div class="col-lg-6" style="padding-left:80px;">
-                <h2
-                    class="mb-4 fw-bold"
-                    style="font-size:50px; line-height: 40px; text-transform:capitalize;">Benefits of using
+                <h2 class="mb-4 fw-bold" style="font-size:50px; line-height: 40px; text-transform:capitalize;">Benefits
+                    of using
                     <br>
-                    our services</h2>
+                    our services
+                </h2>
 
                 <!-- Benefit 1 -->
                 <div class="m-benefit">
@@ -185,8 +165,10 @@
                             <div class="list-benefite">
                                 <p class="benefit-title">Complete
                                     <br>
-                                    Facilities & Free Wifi</p>
-                                <p class="benefit-description">We provide a smart TV, refrigerator, free mineral water, save box and free wifi.</p>
+                                    Facilities & Free Wifi
+                                </p>
+                                <p class="benefit-description">We provide a smart TV, refrigerator, free mineral water,
+                                    save box and free wifi.</p>
                             </div>
                         </div>
                     </div>
@@ -201,7 +183,8 @@
                             <div class="list-benefite">
                                 <p class="benefit-title">Strategic
                                     <br>
-                                    Location</p>
+                                    Location
+                                </p>
                                 <p class="benefit-description">You can easily access other famous spot like
                                     Brawa beach, canggu, and we just 45 minutes from the airport.</p>
                             </div>
@@ -223,64 +206,46 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <!--End Section binefits -->
+    <!--End Section binefits -->
 
-        <!-- Section Testimonial -->
-        <section id="testimonial" style="background: #FFF7ED; border-radius: 20px;">
-            <h2 class="fw-bold">Testimonial</h2>
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="Slide 1"></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+    <!-- Section Testimonial -->
+    <section id="testimonial" style="background: #FFF7ED; border-radius: 20px;">
+        <h2 class="fw-bold">Testimonial</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </section>
-        <!--End Section Testimonial -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--End Section Testimonial -->
+</div>
 
-    </div>
-
-    <?= $this->EndSection(); ?>
+<?= $this->EndSection(); ?>
