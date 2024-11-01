@@ -14,10 +14,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <!-- Centered Menu -->
       <ul class="navbar-nav mx-auto navb-link">
-        <li class="nav-item fs-5"><a class="nav-link <?= $nav_selected == '1' ? 'active': ''; ?>" href="<?= base_url(''); ?>">Home</a></li>
-        <li class="nav-item fs-5"><a class="nav-link <?= $nav_selected == '2' ? 'active': ''; ?>" href="<?= base_url('rooms'); ?>">Rooms</a></li>
-        <li class="nav-item fs-5"><a class="nav-link <?= $nav_selected == '3' ? 'active': ''; ?>" href="<?= base_url('benefits'); ?>">Benefits</a></li>
-        <li class="nav-item fs-5"><a class="nav-link <?= $nav_selected == '4' ? 'active': ''; ?>" href="<?= base_url('testimonial'); ?>">Testimonial</a></li>
+        <li class="nav-item fs-5"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item fs-5"><a class="nav-link" href="#rooms">Rooms</a></li>
+        <li class="nav-item fs-5"><a class="nav-link" href="#benefits">Benefits</a></li>
+        <li class="nav-item fs-5"><a class="nav-link" href="#testimonial">Testimonial</a></li>
       </ul>
       
       <!-- Social Media Icons -->
