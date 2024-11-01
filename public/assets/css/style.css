@@ -792,3 +792,27 @@ nav ul li .nav-link {
   bottom: 0;
   left: 0;
 }
+}
+#footer{
+  background-color:#ffffff;
+  padding-top:80px ;
+  padding-bottom:80px ;
+}
+#footer .container .row .col-lg-4 .box10{
+  padding-left:40px ;
+  margin-bottom:8px ;
+}
+#footer .container .row .col-lg-4 .box9{
+  padding-left:40px ;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+#copiright{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: #fdc463;
+}
+#copiright h4{
+  font-size: 10px;
+  text-align: center;
+}
