@@ -157,7 +157,7 @@
 
     <!-- Section binefits -->
 
-    <section id="binefits" style="margin: 100px 0;">
+    <section id="benefits" style="margin: 100px 0;">
         <div class="row">
             <div class="col-lg-6">
                 <img
