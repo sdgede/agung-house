@@ -4,7 +4,7 @@
     <!-- Room Image -->
     <section class="rooms-images">
         <div class="row">
-            <div class="col-lg-7 p-1 pt-0">
+            <div class="col-lg-7 p-1 pt-0" data-aos="fade-up">
                 <div class="card-image">
                     <img class="rooms-image" src="<?= base_url('assets/img/rooms-left.png'); ?>" alt="">
                     <a href="#" class="button-show-all-photos">
@@ -125,6 +125,7 @@
                         <h5 class="stay-info-title m-0">Stay Information</h5>
                     </div>
                     <div class="card-body stay-info-body">
+                        <hr class="m-0" style="width: 65px;">
                         Providing lake views, The Symphony 9 Tam Coc in Ninh Binh provides accommodation, an outdoor swimming pool, a bar, a shared lounge, a garden and barbecue facilities. Complimentary WiFi is provided.
                         <br>
                         <br>
@@ -146,6 +147,7 @@
                         <p class="m-0">About the property's amenities and services</p>
                     </div>
                     <div class="card-body amenities-body">
+                        <hr class="m-0" style="width: 65px;">
                         <div class="row">
                             <div class="col-lg-4">
                                 <i class="fas fa-wifi"></i>
@@ -176,7 +178,7 @@
                                 Soap
                             </div>
                             <div class="col-lg-4">
-                            <i class="fas fa-wind"></i>
+                                <i class="fas fa-wind"></i>
                                 Hairdryer
                             </div>
                             <div class="col-lg-4">
@@ -198,6 +200,7 @@
                         <p class="m-0">Prices may increase on weekends or holidays</p>
                     </div>
                     <div class="card-body">
+                        <hr class="m-0" style="width: 65px;">
                         <div class="room-rate-list">
                             <div class="col-lg-12 active">
                                 <span>Daily</span>
@@ -222,6 +225,95 @@
                         </div>
                     </div>
                     <div class="card-footer"></div>
+                </div>
+                <!-- Host Information -->
+                <div class="card">
+                    <div class="card-header amenities-header">
+                        <h5 class="stay-info-title m-0">Host Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <hr class="m-0" style="width: 65px;">
+                        <div class="host-profile">
+                            <img src="assets/img/profile.jpeg" alt="..." class="profile-img">
+                            <div class="profile-info">
+                                <h5>Agung Guest House</h5>
+                                <p class="m-0">
+                                    <i class="fas fa-star rating-star"></i>
+                                    4.9 <span>(122 riviews) - 12 places</span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="m-0 host-desc">
+                            Providing lake views, The Symphony 9 Tam Coc in Ninh Binh provides accommodation, an outdoor swimming pool, a bar, a shared lounge, a garden and barbecue facilities...
+                        </p>
+                        <div class="host-superior">
+                            <div class="superiority">
+                                <i class="far fa-comment-alt-lines"></i>
+                                <span>Response rate - 100%</span>
+                            </div>
+                            <div class="superiority">
+                                <i class="far fa-clock"></i>
+                                <span>Fast response - within a few hours</span>
+                            </div>
+                        </div>
+                        <hr class="m-0" style="width: 65px;">
+                    </div>
+                    <div class="card-footer">
+                        <button class="more-amenities-btn">
+                            See Profile
+                        </button>
+                    </div>
+                </div>
+                <!-- Riviews -->
+                <div class="card">
+                    <div class="card-header amenities-header">
+                        <h5 class="stay-info-title m-0">Riviews (23 riviews)</h5>
+                    </div>
+                    <div class="card-body">
+                        <hr class="m-0" style="width: 65px;">
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="more-amenities-btn">
+                            View more 20 riview
+                        </button>
+                    </div>
+                </div>
+                <!-- Things To Know -->
+                <div class="card">
+                    <div class="card-header amenities-header">
+                        <h5 class="stay-info-title m-0">Things to know</h5>
+                    </div>
+                    <div class="card-body">
+                        <hr style="width: 65px;">
+                        <div class="ttk">
+                            <h5 class="m-0">Cancellation policy</h5>
+                            <p class="m-0">Refund 50% of the booking value when customers cancel the room within 48 hours after successful booking and 14 days before the check-in time. Then, cancel the room 14 days before the check-in time, get a 50% refund of the total amount paid (minus the service fee).</p>
+                        </div>
+                        <hr style="width: 65px;">
+                        <div class="ttk">
+                            <h5 class="m-0">Check-in time</h5>
+                            <div class="check-in">
+                                <p class="m-0">Check-in</p>
+                                <p class="m-0">02:00 pm - 04:00 pm</p>
+                            </div>
+                            <div class="check-out">
+                                <p class="m-0">Check-out</p>
+                                <p class="m-0">10:00 am - 12:00 pm</p>
+                            </div>
+                        </div>
+                        <hr style="width: 65px;">
+                        <div class="ttk">
+                            <h5 class="m-0">Special Note</h5>
+                            <p class="m-0 special-note">
+                                - Ban and I will work together to keep the landscape and environment green and clean by not littering, not using stimulants and respecting people around.
+                                <br><br>
+                                - Do not sing karaoke past 11:30
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                    </div>
                 </div>
             </div>
 
