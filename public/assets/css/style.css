@@ -414,7 +414,7 @@ nav ul li .nav-link {
 #rooms .star{
   color:#DC2626;
 }
-#rooms .grey{
+ .grey{
   color: gray;
 }
 #rooms .btn_m{
@@ -469,4 +469,22 @@ nav ul li .nav-link {
   background-color: #FDC463; 
   bottom: 0;
   left: 0;
+}
+
+.des-profile{
+  position: relative;
+}
+
+#testimonial .row .profile{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#testimonial .text-profil{
+  position: absolute ;
+  left: 50px;
+}
+
+#testimonial .card .card-body p{
+  font-size: 12px;
 }
