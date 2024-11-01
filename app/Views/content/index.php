@@ -208,44 +208,85 @@
             </div>
     </section>
 
-    <!--End Section binefits -->
-
-    <!-- Section Testimonial -->
-    <section id="testimonial" style="background: #FFF7ED; border-radius: 20px;">
-        <h2 class="fw-bold">Testimonial</h2>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <!-- Section Testimonial -->
+        <section
+            id="testimonial"
+            style="background: #FFF7ED; border-radius: 20px; padding:100px;">
+            <h2 class="fw-bold text-center">Testimonial</h2>
+            <p class="text-center grey">Our customer, that satisfied with us</p>
+            <div class="row">
+                <div class="col-lg-4 mt-5">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <div class="des-profile mx-auto row mb-4" style="width: 200px;">
+                                <div class="col-lg-6">
+                                    <img
+                                        src="<?= base_url('assets/img/profile.jpeg'); ?>"
+                                        alt="picture"
+                                        class="profile">
+                                </div>
+                                <div class="col-lg-6 text-profil">
+                                    <span class="fw-bold">Ms. Chiki</span>
+                                    <br>
+                                    <i class="bi bi-star-fill rating-star"></i>
+                                    <span class="fw-bold ret">4.9</span>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                "I had an amazing stay at this guest house! The staff were incredibly friendly
+                                and went out of their way to make me feel at home. The room was clean, spacious,
+                                and had all the amenities I needed. Plus, the location is perfect—just a short
+                                walk to local restaurants and shops. I would definitely stay here again!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <div class="des-profile mx-auto row mb-4" style="width: 200px;">
+                                <div class="col-lg-6">
+                                    <img
+                                        src="<?= base_url('assets/img/profile.jpeg'); ?>"
+                                        alt="picture"
+                                        class="profile">
+                                </div>
+                                <div class="col-lg-6 text-profil">
+                                    <span class="fw-bold">Mr.  Jhon</span>
+                                    <br>
+                                    <i class="bi bi-star-fill rating-star"></i>
+                                    <span class="fw-bold ret">5</span>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                            The guest house was cozy and comfortable. The room was a bit smaller than I expected, but it was well-maintained and had a nice, homey feel. The breakfast was delicious, and I loved the garden area for relaxing. It’s a great place for travelers who want a peaceful atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <div class="des-profile mx-auto row mb-4" style="width: 200px;">
+                                <div class="col-lg-6">
+                                    <img
+                                        src="<?= base_url('assets/img/profile.jpeg'); ?>"
+                                        alt="picture"
+                                        class="profile">
+                                </div>
+                                <div class="col-lg-6 text-profil">
+                                    <span class="fw-bold">Sir. Baba</span>
+                                    <br>
+                                    <i class="bi bi-star-fill rating-star"></i>
+                                    <span class="fw-bold ret">4.9</span>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                            "The guest house was okay, but not exactly what I expected. The room was clean, but the walls were a bit thin, so I could hear noise from the other rooms. The staff were nice, though, and the location was very central. It’s a decent place if you're just looking for somewhere to sleep."</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
-    <!--End Section Testimonial -->
 </div>
 
 <?= $this->EndSection(); ?>

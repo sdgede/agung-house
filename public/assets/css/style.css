@@ -792,7 +792,25 @@ nav ul li .nav-link {
   bottom: 0;
   left: 0;
 }
+
+.des-profile{
+  position: relative;
 }
+
+#testimonial .row .profile{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#testimonial .text-profil{
+  position: absolute ;
+  left: 50px;
+}
+
+#testimonial .card .card-body p{
+  font-size: 12px;
+}
+
 #footer{
   background-color:#ffffff;
   padding-top:80px ;
@@ -816,3 +834,4 @@ nav ul li .nav-link {
   font-size: 10px;
   text-align: center;
 }
+

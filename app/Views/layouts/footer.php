@@ -1,4 +1,5 @@
 
+
 <hr>
 <section id="footer">
     <div class="container">
@@ -50,9 +51,12 @@
 <section id="copiright">
   <h4>Copiright </h4>
 </section>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="<?= base_url('assets/js/bootstrap.bundle.js'); ?>"></script>
-<script src="<?= base_url('aos/aos.js'); ?>"></script>
+
+
+<script src="<?= base_url('assets/js/bootstrap.bundle.js'); ?>"></script> 
+<script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script> 
+<script src="<?= base_url('AOS/src/js/aos.js'); ?>"></script> 
+
 <script>
   $(document).on('ready', function() {
     // initialization of aos
