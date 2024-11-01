@@ -6,8 +6,8 @@
     <!-- header Section -->
     <header id="header">
         <div class="row">
-            <div data-aos="fade-up" class=" col-lg-6">
-                <h1 class="fw-bold title" style="text-transform: capitalize; font-size:60px;">Feel
+            <div  class=" col-lg-6">
+                <h1 data-aos="fade-up-left" class="fw-bold title" style="text-transform: capitalize; font-size:60px;">Feel
                     the Comfort
                     <br>
                     of your Home
@@ -15,7 +15,7 @@
                 </h1>
 
                 <!-- harga -->
-                <div class="shadow px-4 py-4  bg-body-tertiary rounded" style="width:300px; margin-top:80px;"
+                <div data-aos="fade-up-left" class="shadow px-4 py-4  bg-body-tertiary rounded" style="width:300px; margin-top:80px;"
                 >
                     <div class="card-header">
                         <div class="d-flex">
@@ -59,11 +59,11 @@
             <div class="col-lg-6 ">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img class="mb-4" src="<?= base_url('assets/img/room.png'); ?>" width="100%" alt="picture">
-                        <img src="<?= base_url('assets/img/window.png'); ?>" alt="picture" width="100%">
+                        <img data-aos="fade-down" class="mb-4" src="<?= base_url('assets/img/room.png'); ?>" width="100%" alt="picture">
+                        <img data-aos="fade-right" src="<?= base_url('assets/img/window.png'); ?>" alt="picture" width="100%">
 
                     </div>
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-up">
                         <img style="margin-top:100px" src="<?= base_url('assets/img/loby.png'); ?>" alt="picture"
                             width="100%">
                     </div>
@@ -76,10 +76,10 @@
     <!-- rooms section -->
     <section id="rooms" style=" margin-top:140px;">
         <div class="row">
-            <h3 class="fw-bold mb-3">Rooms Katalog</h3>
+            <h3 data-aos="fade-down-left" class="fw-bold mb-3">Rooms Katalog</h3>
             <div class="col-lg-6">
-                <div class="card">
-                    <img src="<?= base_url('assets/img/room.png'); ?>" class="card-img-top rounded-top" alt="picture"
+                <div class="card" data-aos="fade-left">
+                    <img  src="<?= base_url('assets/img/room.png'); ?>" class="card-img-top rounded-top" alt="picture"
                         height="380px">
                     <div class="card-body">
                         <div class="row">
@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="card rounded-top">
+                <div class="card rounded-top" data-aos="fade-right">
                     <img src="<?= base_url('assets/img/window.png'); ?>" class="card-img-top" alt="picture"
                         height="380px">
                     <div class="card-body">
@@ -142,20 +142,20 @@
 
     <section id="benefits" style="margin: 100px 0;">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
                 <img src="<?= base_url('assets/img/frot_view.png'); ?>" alt="Pictre" class=""
                     style="width: 100%;  height: 90vh; border-radius:  0px 50% 0 0;">
             </div>
 
             <div class="col-lg-6" style="padding-left:80px;">
-                <h2 class="mb-4 fw-bold" style="font-size:50px; line-height: 40px; text-transform:capitalize;">Benefits
+                <h2 data-aos="fade-lrft" class="mb-4 fw-bold" style="font-size:50px; line-height: 40px; text-transform:capitalize;">Benefits
                     of using
                     <br>
                     our services
                 </h2>
 
                 <!-- Benefit 1 -->
-                <div class="m-benefit">
+                <div class="m-benefit" data-aos="fade-up">
                     <div class="benefit">
                         <div class="circle">
                             <span class="benefit-number">01</span>
@@ -173,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="m-benefit">
+                <div class="m-benefit" data-aos="fade-up-right" >
                     <div class="benefit">
                         <div class="circle">
                             <span class="benefit-number">02</span>
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="m-benefit">
+                <div class="m-benefit" data-aos="fade-up-left">
                     <div class="benefit">
                         <div class="circle">
                             <span class="benefit-number">03</span>
@@ -212,10 +212,10 @@
         <section
             id="testimonial"
             style="background: #FFF7ED; border-radius: 20px; padding:100px;">
-            <h2 class="fw-bold text-center">Testimonial</h2>
-            <p class="text-center grey">Our customer, that satisfied with us</p>
+            <h2 class="fw-bold text-center"data-aos="fade-up" >Testimonial</h2>
+            <p class="text-center grey" data-aos="fade-up" >Our customer, that satisfied with us</p>
             <div class="row">
-                <div class="col-lg-4 mt-5">
+                <div class="col-lg-4 mt-5" data-aos="zoom-in">
                     <div class="card" style="width: 100%;">
                         <div class="card-body">
                             <div class="des-profile mx-auto row mb-4" style="width: 200px;">
@@ -240,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-5">
+                <div class="col-lg-4 mt-5" data-aos="zoom-in">
                     <div class="card" style="width: 100%;">
                         <div class="card-body">
                             <div class="des-profile mx-auto row mb-4" style="width: 200px;">
@@ -262,7 +262,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-5">
+                <div class="col-lg-4 mt-5" data-aos="zoom-in">
                     <div class="card" style="width: 100%;">
                         <div class="card-body">
                             <div class="des-profile mx-auto row mb-4" style="width: 200px;">

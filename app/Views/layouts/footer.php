@@ -61,8 +61,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
         AOS.init({
-            duration: 1000, // durasi animasi dalam milidetik
-            once: true // animasi hanya berjalan sekali
+            duration: 1000, 
+            once: false // animasi hanya berjalan sekali
         });
 </script>
 </body>
