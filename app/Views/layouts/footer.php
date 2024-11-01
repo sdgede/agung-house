@@ -62,7 +62,7 @@
 <script>
         AOS.init({
             duration: 1000, // durasi animasi dalam milidetik
-            once: true // animasi hanya berjalan sekali
+            once: false // animasi hanya berjalan sekali
         });
 </script>
 </body>
