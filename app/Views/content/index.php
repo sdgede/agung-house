@@ -6,8 +6,8 @@
     <!-- header Section -->
     <header id="header">
         <div class="row">
-            <div  class=" col-lg-6">
-                <h1 data-aos="fade-up-left" class="fw-bold title" style="text-transform: capitalize; font-size:60px;">Feel
+            <div  class="col-lg-6">
+                <h1 data-aos="fade-up-left" class="fw-bold title" style="text-transform: capitalize;">Feel
                     the Comfort
                     <br>
                     of your Home
@@ -15,7 +15,7 @@
                 </h1>
 
                 <!-- harga -->
-                <div data-aos="fade-up-left" class="shadow px-4 py-4  bg-body-tertiary rounded" style="width:300px; margin-top:80px;"
+                <div data-aos="fade-up-left" class="shadow px-4 py-4  bg-body-tertiary rounded  hed-checkin" style=" margin-top:80px;"
                 >
                     <div class="card-header">
                         <div class="d-flex">
@@ -56,14 +56,14 @@
                 </div>
             </div>
             <!-- img header -->
-            <div class="col-lg-6 ">
-                <div class="row">
+            <div class="col-lg-6">
+                <div class="row heder-img ">
                     <div class="col-lg-6">
                         <img data-aos="fade-down" class="mb-4" src="<?= base_url('assets/img/room.png'); ?>" width="100%" alt="picture">
                         <img data-aos="fade-right" src="<?= base_url('assets/img/window.png'); ?>" alt="picture" width="100%">
 
                     </div>
-                    <div class="col-6" data-aos="fade-up">
+                    <div class="col-lg-6 hiden" data-aos="fade-up">
                         <img style="margin-top:100px" src="<?= base_url('assets/img/loby.png'); ?>" alt="picture"
                             width="100%">
                     </div>
