@@ -4,19 +4,23 @@
 <div class="container mt-5">
 
     <!-- header Section -->
-    <header id="header">
+    <header class="border" id="header" style="height: 100vh;">
         <div class="row">
-            <div  class="col-lg-6">
-                <h1 data-aos="fade-up-left" class="fw-bold title" style="text-transform: capitalize;">Feel
-                    the Comfort
+            <div class="col-lg-6">
+                <h1
+                    data-aos="fade-up-left"
+                    class="fw-bold title"
+                    style="text-transform: capitalize;">Feel the Comfort
                     <br>
                     of your Home
                     <br>with us
                 </h1>
 
                 <!-- harga -->
-                <div data-aos="fade-up-left" class="shadow px-4 py-4  bg-body-tertiary rounded  hed-checkin" style=" margin-top:80px;"
-                >
+                <div
+                    data-aos="fade-up-left"
+                    class="shadow px-4 py-4  bg-body-tertiary rounded  hed-checkin"
+                    style=" margin-top:80px;">
                     <div class="card-header">
                         <div class="d-flex">
                             <h5 class="fs-5 fw-bold">Rp. 7.000.000</h5>
@@ -25,7 +29,7 @@
                         </div>
 
                         <div class="card-bod text-center my-4 ">
-                            <form action="" class="d-flex row  ">
+                            <form action="<?= base_url('/save'); ?>" class="d-flex row " method="post">
                                 <div class="col-lg-6 checkin py-2 border">
                                     <label for="Check-in border border-3">Check-in</label>
                                     <br>
@@ -34,20 +38,19 @@
                                 <div class="col-lg-6 checkout py-2 border border-start-3">
                                     <label for="Check-out">Check-out</label>
                                     <br>
-                                    <input type="date" name="Check-out" id="Check-out" class="input_none">
+                                    <input type="date" name="Check-out" id="Check-out" class="input_none from">
                                 </div>
                                 <div class="col-lg-12 text-start guest py-2 border border-top-0  ">
                                     <label for="Guest" class="fw-bold pl-1">Guest</label><br>
-                                    <select class="input_none pt-2">
-                                        <option value="1">1 Guest</option>
-                                        <option value="2">2 Guest</option>
-                                        <option value="4">4 Guest</option>
-                                        <option value="6">6 Guest</option>
+                                    <select name="guests" class="input_none pt-2">
+                                        <option value="1 Guest">1 Guest</option>
+                                        <option value="2 Guest">2 Guest</option>
+                                        <option value="4 Guest">4 Guest</option>
+                                        <option value="6 Guest">6 Guest</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-12">
-                                    <a href="https://api.whatsapp.com/send/?phone=6282147836034&text=tess"
-                                        class="btn btn_ku">Book Now</a>
+                                    <button class="btn_ku" type="submit">Book Now</button>
                                 </div>
                             </form>
 
@@ -59,12 +62,24 @@
             <div class="col-lg-6">
                 <div class="row heder-img ">
                     <div class="col-lg-6">
-                        <img data-aos="fade-down" class="mb-4" src="<?= base_url('assets/img/room.png'); ?>" width="100%" alt="picture">
-                        <img data-aos="fade-right" src="<?= base_url('assets/img/window.png'); ?>" alt="picture" width="100%">
+                        <img
+                            data-aos="fade-down"
+                            class="mb-4"
+                            src="<?= base_url('assets/img/room.png'); ?>"
+                            width="100%"
+                            alt="picture">
+                        <img
+                            data-aos="fade-right"
+                            src="<?= base_url('assets/img/window.png'); ?>"
+                            alt="picture"
+                            width="100%">
 
                     </div>
                     <div class="col-lg-6 hiden" data-aos="fade-up">
-                        <img style="margin-top:100px" src="<?= base_url('assets/img/loby.png'); ?>" alt="picture"
+                        <img
+                            style="margin-top:100px"
+                            src="<?= base_url('assets/img/loby.png'); ?>"
+                            alt="picture"
                             width="100%">
                     </div>
                 </div>
@@ -74,13 +89,16 @@
     <!-- end header section -->
 
     <!-- rooms section -->
-    <section id="rooms" style=" margin-top:140px;">
+    <section class="border" id="rooms" style="height: 100vh;">
         <div class="row">
             <h3 data-aos="fade-down-left" class="fw-bold mb-3">Rooms Katalog</h3>
             <div class="col-lg-6">
                 <div class="card" data-aos="fade-left">
-                    <img  src="<?= base_url('assets/img/room.png'); ?>" class="card-img-top rounded-top" alt="picture"
-                        height="380px">
+                    <img
+                        src="<?= base_url('assets/img/room.png'); ?>"
+                        class="card-img-top rounded-top"
+                        alt="picture"
+                        height="300px">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
@@ -107,8 +125,11 @@
             </div>
             <div class="col-lg-6">
                 <div class="card rounded-top" data-aos="fade-right">
-                    <img src="<?= base_url('assets/img/window.png'); ?>" class="card-img-top" alt="picture"
-                        height="380px">
+                    <img
+                        src="<?= base_url('assets/img/window.png'); ?>"
+                        class="card-img-top"
+                        alt="picture"
+                        height="300px">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
@@ -140,16 +161,21 @@
 
     <!-- Section binefits -->
 
-    <section id="benefits" style="margin: 100px 0;">
+    <section class="border" id="benefits" style="height: 100vh; padding:50px 0px;">
         <div class="row">
             <div class="col-lg-6" data-aos="fade-left">
-                <img src="<?= base_url('assets/img/frot_view.png'); ?>" alt="Pictre" class=""
-                    style="width: 100%;  height: 90vh; border-radius:  0px 50% 0 0;">
+                <img
+                    src="<?= base_url('assets/img/frot_view.png'); ?>"
+                    alt="Pictre"
+                    class=""
+                    style="width: 100%;  height: 80vh; border-radius:  0px 50% 0 0;">
             </div>
 
             <div class="col-lg-6" style="padding-left:80px;">
-                <h2 data-aos="fade-lrft" class="mb-4 fw-bold" style="font-size:50px; line-height: 40px; text-transform:capitalize;">Benefits
-                    of using
+                <h2
+                    data-aos="fade-lrft"
+                    class="mb-4 fw-bold"
+                    style="font-size:50px; line-height: 40px; text-transform:capitalize;">Benefits of using
                     <br>
                     our services
                 </h2>
@@ -167,13 +193,12 @@
                                     <br>
                                     Facilities & Free Wifi
                                 </p>
-                                <p class="benefit-description">We provide a smart TV, refrigerator, free mineral water,
-                                    save box and free wifi.</p>
+                                <p class="benefit-description">We provide a smart TV, refrigerator, free mineral water, save box and free wifi.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="m-benefit" data-aos="fade-up-right" >
+                <div class="m-benefit" data-aos="fade-up-right">
                     <div class="benefit">
                         <div class="circle">
                             <span class="benefit-number">02</span>
@@ -206,87 +231,95 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-        <!-- Section Testimonial -->
-        <section
-            id="testimonial"
-            style="background: #FFF7ED; border-radius: 20px; padding:100px;">
-            <h2 class="fw-bold text-center"data-aos="fade-up" >Testimonial</h2>
-            <p class="text-center grey" data-aos="fade-up" >Our customer, that satisfied with us</p>
-            <div class="row">
-                <div class="col-lg-4 mt-5" data-aos="zoom-in">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body">
-                            <div class="des-profile mx-auto row mb-4" style="width: 200px;">
-                                <div class="col-lg-6">
-                                    <img
-                                        src="<?= base_url('assets/img/profile.jpeg'); ?>"
-                                        alt="picture"
-                                        class="profile">
-                                </div>
-                                <div class="col-lg-6 text-profil">
-                                    <span class="fw-bold">Ms. Chiki</span>
-                                    <br>
-                                    <i class="bi bi-star-fill rating-star"></i>
-                                    <span class="fw-bold ret">4.9</span>
-                                </div>
+    <!-- Section Testimonial -->
+    <section
+        class="border"
+        id="testimonial"
+        style="background: #FFF7ED; border-radius: 20px; height: 100vh; padding:100px; ">
+        <h2 class="fw-bold text-center" data-aos="fade-up">Testimonial</h2>
+        <p class="text-center grey" data-aos="fade-up">Our customer, that satisfied with us</p>
+        <div class="row">
+            <div class="col-lg-4 mt-5" data-aos="zoom-in">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <div class="des-profile mx-auto row mb-4" style="width: 200px;">
+                            <div class="col-lg-6">
+                                <img
+                                    src="<?= base_url('assets/img/profile.jpeg'); ?>"
+                                    alt="picture"
+                                    class="profile">
                             </div>
-                            <p class="card-text">
-                                "I had an amazing stay at this guest house! The staff were incredibly friendly
-                                and went out of their way to make me feel at home. The room was clean, spacious,
-                                and had all the amenities I needed. Plus, the location is perfect—just a short
-                                walk to local restaurants and shops. I would definitely stay here again!"</p>
+                            <div class="col-lg-6 text-profil">
+                                <span class="fw-bold">Ms. Chiki</span>
+                                <br>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <span class="fw-bold ret">4.9</span>
+                            </div>
                         </div>
+                        <p class="card-text">
+                            "I had an amazing stay at this guest house! The staff were incredibly friendly
+                            and went out of their way to make me feel at home. The room was clean, spacious,
+                            and had all the amenities I needed. Plus, the location is perfect—just a short
+                            walk to local restaurants and shops. I would definitely stay here again!"</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-5" data-aos="zoom-in">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body">
-                            <div class="des-profile mx-auto row mb-4" style="width: 200px;">
-                                <div class="col-lg-6">
-                                    <img
-                                        src="<?= base_url('assets/img/profile.jpeg'); ?>"
-                                        alt="picture"
-                                        class="profile">
-                                </div>
-                                <div class="col-lg-6 text-profil">
-                                    <span class="fw-bold">Mr.  Jhon</span>
-                                    <br>
-                                    <i class="bi bi-star-fill rating-star"></i>
-                                    <span class="fw-bold ret">5</span>
-                                </div>
+            </div>
+            <div class="col-lg-4 mt-5" data-aos="zoom-in">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <div class="des-profile mx-auto row mb-4" style="width: 200px;">
+                            <div class="col-lg-6">
+                                <img
+                                    src="<?= base_url('assets/img/profile.jpeg'); ?>"
+                                    alt="picture"
+                                    class="profile">
                             </div>
-                            <p class="card-text">
-                            The guest house was cozy and comfortable. The room was a bit smaller than I expected, but it was well-maintained and had a nice, homey feel. The breakfast was delicious, and I loved the garden area for relaxing. It’s a great place for travelers who want a peaceful atmosphere.</p>
+                            <div class="col-lg-6 text-profil">
+                                <span class="fw-bold">Mr. Jhon</span>
+                                <br>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <span class="fw-bold ret">5</span>
+                            </div>
                         </div>
+                        <p class="card-text">
+                            The guest house was cozy and comfortable. The room was a bit smaller than I
+                            expected, but it was well-maintained and had a nice, homey feel. The breakfast
+                            was delicious, and I loved the garden area for relaxing. It’s a great place for
+                            travelers who want a peaceful atmosphere.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-5" data-aos="zoom-in">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body">
-                            <div class="des-profile mx-auto row mb-4" style="width: 200px;">
-                                <div class="col-lg-6">
-                                    <img
-                                        src="<?= base_url('assets/img/profile.jpeg'); ?>"
-                                        alt="picture"
-                                        class="profile">
-                                </div>
-                                <div class="col-lg-6 text-profil">
-                                    <span class="fw-bold">Sir. Baba</span>
-                                    <br>
-                                    <i class="bi bi-star-fill rating-star"></i>
-                                    <span class="fw-bold ret">4.9</span>
-                                </div>
+            </div>
+            <div class="col-lg-4 mt-5" data-aos="zoom-in">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <div class="des-profile mx-auto row mb-4" style="width: 200px;">
+                            <div class="col-lg-6">
+                                <img
+                                    src="<?= base_url('assets/img/profile.jpeg'); ?>"
+                                    alt="picture"
+                                    class="profile">
                             </div>
-                            <p class="card-text">
-                            "The guest house was okay, but not exactly what I expected. The room was clean, but the walls were a bit thin, so I could hear noise from the other rooms. The staff were nice, though, and the location was very central. It’s a decent place if you're just looking for somewhere to sleep."</p>
+                            <div class="col-lg-6 text-profil">
+                                <span class="fw-bold">Sir. Baba</span>
+                                <br>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <span class="fw-bold ret">4.9</span>
+                            </div>
                         </div>
+                        <p class="card-text">
+                            "The guest house was okay, but not exactly what I expected. The room was clean,
+                            but the walls were a bit thin, so I could hear noise from the other rooms. The
+                            staff were nice, though, and the location was very central. It’s a decent place
+                            if you're just looking for somewhere to sleep."</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 </div>
 
 <?= $this->EndSection(); ?>
