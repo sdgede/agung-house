@@ -4,7 +4,7 @@
     <!-- Room Image -->
     <section class="rooms-images">
         <div class="row">
-            <div class="col-lg-7 p-1 pt-0" data-aos="fade-up">
+            <div class="col-lg-7 p-1 pt-0" data-aos="fade-right">
                 <div class="card-image">
                     <img class="rooms-image" src="<?= base_url('assets/img/rooms-left.png'); ?>" alt="">
                     <a href="#" class="button-show-all-photos">
@@ -13,7 +13,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5" data-aos="fade-left">
                 <div class="row rooms-wrap">
                     <div class="col-lg-12">
                         <div class="row">
@@ -54,7 +54,7 @@
         <div class="row rooms-main-row">
             <div class="col-lg-7">
                 <!-- Room Information -->
-                <div class="card">
+                <div class="card" data-aos="fade-up-right">
                     <div class="card-header">
                         <div class="room-bedge">
                             <p class="room-bedge-text">Villa Room</p>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <!-- Stay Information -->
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-header">
                         <h5 class="stay-info-title m-0">Stay Information</h5>
                     </div>
@@ -141,7 +141,7 @@
                 </div>
 
                 <!-- Amenities -->
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-header amenities-header">
                         <h5 class="stay-info-title m-0">Amenities</h5>
                         <p class="m-0">About the property's amenities and services</p>
@@ -194,7 +194,7 @@
                     </div>
                 </div>
                 <!-- Room Rates -->
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-header amenities-header">
                         <h5 class="stay-info-title m-0">Room Rates</h5>
                         <p class="m-0">Prices may increase on weekends or holidays</p>
@@ -227,7 +227,7 @@
                     <div class="card-footer"></div>
                 </div>
                 <!-- Host Information -->
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-header amenities-header">
                         <h5 class="stay-info-title m-0">Host Information</h5>
                     </div>
@@ -265,13 +265,33 @@
                     </div>
                 </div>
                 <!-- Riviews -->
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-header amenities-header">
                         <h5 class="stay-info-title m-0">Riviews (23 riviews)</h5>
                     </div>
                     <div class="card-body">
                         <hr class="m-0" style="width: 65px;">
-
+                        <div class="form-group rating-group">
+                            <div class="rating-widget">
+                                <input type="radio" name="rate" id="rate-1">
+                                <label for="rate-1" class="fas fa-star rating"></label>
+                                <input type="radio" name="rate" id="rate-2">
+                                <label for="rate-2" class="fas fa-star rating"></label>
+                                <input type="radio" name="rate" id="rate-3">
+                                <label for="rate-3" class="fas fa-star rating"></label>
+                                <input type="radio" name="rate" id="rate-4">
+                                <label for="rate-4" class="fas fa-star rating"></label>
+                                <input type="radio" name="rate" id="rate-5" checked>
+                                <label for="rate-5" class="fas fa-star rating"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="riview-group">
+                                <textarea name="input-riview" id="input-riview" placeholder="Share your thoughts ..." class="form-control"></textarea>
+                                <button class="btn-submit-riview"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <hr class="m-0">
                     </div>
                     <div class="card-footer">
                         <button class="more-amenities-btn">
@@ -280,7 +300,7 @@
                     </div>
                 </div>
                 <!-- Things To Know -->
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-header amenities-header">
                         <h5 class="stay-info-title m-0">Things to know</h5>
                     </div>
@@ -319,7 +339,7 @@
 
             <!-- Col - 4 -->
             <div class="col-lg-4">
-                <div class="card">
+                <div class="card" data-aos="fade-up-left">
                     <div class="card-header">
                         <div class="room-price">
                             <h3 class="type-room m-0">$200 <span>/night</span></h3>

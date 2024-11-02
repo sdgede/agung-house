@@ -324,6 +324,7 @@ nav ul li .nav-link {
   padding: 16px;
   border-radius: 8px;
   color: gray;
+  width: 100%;
 }
 
 .rooms-main-row>.col-lg-7>.card>.card-body>.room-rate-list>.active {
@@ -422,6 +423,74 @@ nav ul li .nav-link {
   font-size: 16px;
 }
 
+/* Rating Input */
+
+.rating-group input {
+  display: none;
+}
+
+.rating-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating-widget {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rating-group .rating {
+  font-size: 24px;
+  color: #444;
+  transition: all 0.4s ease;
+}
+
+.rating-group input:not(:checked)~label:hover,
+.rating-group input:not(:checked)~label:hover~label {
+  color: #fd4;
+}
+
+.rating-group input:checked~label {
+  color: #fd4;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.form-group>.riview-group {
+  border-radius: 16px;
+  border: 1px #E5E7EB solid;
+  max-height: max-content;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  gap: 5px;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.form-group>.riview-group>#input-riview {
+  padding: 10px 15px;
+  resize: none;
+  border: 0;
+  background-color: transparent;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.form-group>.riview-group>.btn-submit-riview {
+  background-color: #4F46E5;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  border: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.form-group>.riview-group>.btn-submit-riview:hover {
+  padding: 10px;
+  font-size: 25px;
+}
+
+/* End Rating Input */
+
 .rooms-main-row > .col-lg-7 > .card > .card-footer {
   padding: 25px;
   display: flex;
@@ -454,11 +523,15 @@ nav ul li .nav-link {
 }
 
 .rooms-main-row > .col-lg-7 > .card > .card-footer > .more-amenities-btn {
-  padding: 10px 20px;
+  padding: 11px 21px;
   border: 1px #e5e7eb solid;
   border-radius: 36px;
   background-color: #fff;
   color: #374151;
+}
+
+.rooms-main-row > .col-lg-7 > .card > .card-footer > .more-amenities-btn:hover {
+  font-size: 17px;
 }
 
 /* col - 4 */
@@ -703,6 +776,30 @@ nav ul li .nav-link {
 
 /* GLOBAL STYLE */
 
+::-webkit-scrollbar {
+  width: 8px;            
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;   
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;      
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;      
+}
+
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: #888 #f1f1f1; 
+}
+
+
 .booking-wa-button {
   width: 364px;
   height: 50px;
@@ -718,6 +815,10 @@ nav ul li .nav-link {
   font-size: 20px;
   font-weight: 600;
   gap: 10px;
+}
+
+.booking-wa-button:hover {
+  font-size: 21px;
 }
 
 .booking-wa-button > .fa-whatsapp {
