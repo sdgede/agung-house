@@ -292,6 +292,72 @@
                             </div>
                         </div>
                         <hr class="m-0">
+                        <div class="guest-riview">
+                            <img src="assets/img/profile.jpeg" alt="">
+                            <div class="riview">
+                                <div class="guest-info">
+                                    <div class="guest-profile">
+                                        <h5 class="m-0">Cody Fisher</h5>
+                                        <span>May 20, 2024</span>
+                                    </div>
+                                    <div class="guest-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="m-0">
+                                There’s no stopping the tech giant. Apple now opens its 100th store in China.There’s no stopping the tech giant.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="m-0">
+                        <div class="guest-riview">
+                            <img src="assets/img/profile.jpeg" alt="">
+                            <div class="riview">
+                                <div class="guest-info">
+                                    <div class="guest-profile">
+                                        <h5 class="m-0">Cody Fisher</h5>
+                                        <span>May 20, 2024</span>
+                                    </div>
+                                    <div class="guest-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="m-0">
+                                There’s no stopping the tech giant. Apple now opens its 100th store in China.There’s no stopping the tech giant.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="m-0">
+                        <div class="guest-riview">
+                            <img src="assets/img/profile.jpeg" alt="">
+                            <div class="riview">
+                                <div class="guest-info">
+                                    <div class="guest-profile">
+                                        <h5 class="m-0">Cody Fisher</h5>
+                                        <span>May 20, 2024</span>
+                                    </div>
+                                    <div class="guest-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="m-0">
+                                There’s no stopping the tech giant. Apple now opens its 100th store in China.There’s no stopping the tech giant.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="m-0">
                     </div>
                     <div class="card-footer">
                         <button class="more-amenities-btn">

@@ -399,6 +399,55 @@ nav ul li .nav-link {
   color: #6B7280;
 }
 
+.rooms-main-row>.col-lg-7>.card>.card-body>.guest-riview {
+  display: flex;
+  gap: 15px;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.guest-riview>img {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+
+}
+.rooms-main-row>.col-lg-7>.card>.card-body>.guest-riview>.riview {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.guest-riview>.riview>.guest-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.guest-riview>.riview>.guest-info>.guest-profile{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.guest-riview>.riview>.guest-info>.guest-profile>h5{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.guest-riview>.riview>.guest-info>.guest-profile>span{
+  font-size: 12px;
+  font-weight: 400;
+  color: #6B7280;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.guest-riview>.riview>.guest-info>.guest-rating{
+  font-size: 16px;
+  color: #F59E0B;
+}
+
+.rooms-main-row>.col-lg-7>.card>.card-body>.guest-riview>.riview>p {
+  color: #6B7280;
+}
+
+
 .rooms-main-row
   > .col-lg-7
   > .card
