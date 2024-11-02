@@ -4,7 +4,7 @@
 <div class="container mt-5">
 
     <!-- header Section -->
-    <header class="border" id="header" style="height: 100vh;">
+    <header id="header" style="height: 100vh;">
         <div class="row">
             <div class="col-lg-6">
                 <h1
@@ -50,7 +50,7 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-12">
-                                    <button class="btn_ku" type="submit">Book Now</button>
+                                    <button class="btn btn_ku" type="submit">Book Now</button>
                                 </div>
                             </form>
 
@@ -89,7 +89,7 @@
     <!-- end header section -->
 
     <!-- rooms section -->
-    <section class="border" id="rooms" style="height: 100vh;">
+    <section  id="rooms" style="height: 100vh;">
         <div class="row">
             <h3 data-aos="fade-down-left" class="fw-bold mb-3">Rooms Katalog</h3>
             <div class="col-lg-6">
@@ -118,7 +118,7 @@
                         <span class="grey">
                             <i class="bi bi-geo-alt"></i>
                             Agung Guest House</span><br>
-                        <a href="#" class="btn btn_m fw-bold">Explore
+                        <a href="<?= base_url('/rooms'); ?>" class="btn btn_m fw-bold">Explore
                         </a>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                         <span class="grey">
                             <i class="bi bi-geo-alt"></i>
                             Agung Guest House</span><br>
-                        <a href="#" class="btn btn_m fw-bold">Explore
+                        <a href="<?= base_url('/rooms'); ?>" class="btn btn_m fw-bold">Explore
                         </a>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
 
     <!-- Section binefits -->
 
-    <section class="border" id="benefits" style="height: 100vh; padding:50px 0px;">
+    <section id="benefits" style="height: 100vh; padding:50px 0px;">
         <div class="row">
             <div class="col-lg-6" data-aos="fade-left">
                 <img
@@ -236,7 +236,6 @@
 
     <!-- Section Testimonial -->
     <section
-        class="border"
         id="testimonial"
         style="background: #FFF7ED; border-radius: 20px; height: 100vh; padding:100px; ">
         <h2 class="fw-bold text-center" data-aos="fade-up">Testimonial</h2>
