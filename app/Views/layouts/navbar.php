@@ -14,7 +14,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <!-- Centered Menu -->
       <ul class="navbar-nav mx-auto navb-link">
-        <li class="nav-item fs-5"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item fs-5"><a class="nav-link" href="/">Home</a></li>
         <li class="nav-item fs-5"><a class="nav-link" href="#rooms">Rooms</a></li>
         <li class="nav-item fs-5"><a class="nav-link" href="#benefits">Benefits</a></li>
         <li class="nav-item fs-5"><a class="nav-link" href="#testimonial">Testimonial</a></li>
@@ -25,7 +25,7 @@
         <a href="#" class="me-2 fs-3"><i class="bi bi-facebook"></i></a>
         <a href="#" class="me-2 fs-3 text-danger"><i class="bi bi-youtube"></i></a>
         <a href="#" class="me-2 fs-3"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#" class="fs-3"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.instagram.com/megd.idr/?hl=id" class="fs-3"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
   </div>

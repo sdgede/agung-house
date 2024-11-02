@@ -118,7 +118,7 @@
                         <span class="grey">
                             <i class="bi bi-geo-alt"></i>
                             Agung Guest House</span><br>
-                        <a href="#" class="btn btn_m fw-bold">Explore
+                        <a href="<?= base_url('/rooms'); ?>" class="btn btn_m fw-bold">Explore
                         </a>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                         <span class="grey">
                             <i class="bi bi-geo-alt"></i>
                             Agung Guest House</span><br>
-                        <a href="#" class="btn btn_m fw-bold">Explore
+                        <a href="<?= base_url('/rooms'); ?>" class="btn btn_m fw-bold">Explore
                         </a>
                     </div>
                 </div>
