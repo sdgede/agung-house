@@ -43,7 +43,7 @@ class Home extends BaseController
           // Kodekan pesan untuk URL
           $encoded_message = urlencode($message);
 
-          dd($message);
+        //   dd($message);
           
           // Buat URL WhatsApp
           $wa_url = "https://api.whatsapp.com/send?phone=$no_admin&text=$encoded_message";

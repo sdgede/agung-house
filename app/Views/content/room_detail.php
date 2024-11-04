@@ -2,7 +2,7 @@
 <?= $this->Section('content'); ?>
 <div class="container-fluid">
     <!-- Room Image -->
-    <section class="rooms-images">
+    <section class="rooms-images ">
         <div class="row">
             <div class="col-lg-7 p-1 pt-0" data-aos="fade-right">
                 <div class="card-image">
@@ -50,7 +50,7 @@
     <!-- End Room Image -->
 
     <!-- Main -->
-    <section class="rooms-main">
+    <section class="rooms-main ">
         <div class="row rooms-main-row">
             <div class="col-lg-7">
                 <!-- Room Information -->
@@ -219,7 +219,7 @@
                                 <span>$554</span>
                             </div>
                             <div class="col-lg-12 active">
-                                <span>Empty Field</span>
+                                <span>Long Term</span>
                                 <span>$554</span>
                             </div>
                         </div>
