@@ -1,243 +1,210 @@
 <?= $this->extend('layouts/template'); ?>
 <?= $this->Section('content'); ?>
 
-<div class="container mt-5">
-
-    <!-- header Section -->
-    <header id="header" style="height: 100vh;">
-        <div class="row">
-            <div class="col-lg-6">
-                <h1
-                    data-aos="fade-up-left"
-                    class="fw-bold title"
-                    style="text-transform: capitalize;">Feel the Comfort
+<header id="header">
+    <div class="row">
+        <div class="col-lg-6 conten-header">
+            <!-- content Text Header -->
+            <div class="head-content-text">
+                <h1 data-aos="zoom-in" class="text-heading">Feel the Comfort
                     <br>
                     of your Home
                     <br>with us
                 </h1>
-
-                <!-- harga -->
-                <div
-                    data-aos="fade-up-left"
-                    class="shadow px-4 py-4  bg-body-tertiary rounded  hed-checkin"
-                    style=" margin-top:80px;">
-                    <div class="card-header">
-                        <div class="d-flex">
-                            <h5 class="fs-5 fw-bold">Rp. 7.000.000</h5>
-                            <span style="font-size:12px;">
-                                /month</span>
-                        </div>
-
-                        <div class="card-bod text-center my-4 ">
-                            <form action="<?= base_url('/save'); ?>" class="d-flex row " method="post">
-                                <div class="col-lg-6 checkin py-2 border">
-                                    <label for="Check-in border border-3">Check-in</label>
-                                    <br>
-                                    <input type="date" name="Check-in" id="Check-in" class="input_none">
-                                </div>
-                                <div class="col-lg-6 checkout py-2 border border-start-3">
-                                    <label for="Check-out">Check-out</label>
-                                    <br>
-                                    <input type="date" name="Check-out" id="Check-out" class="input_none from">
-                                </div>
-                                <div class="col-lg-12 text-start guest py-2 border border-top-0  ">
-                                    <label for="Guest" class="fw-bold pl-1">Guest</label><br>
-                                    <select name="guests" class="input_none pt-2">
-                                        <option value="1 Guest">1 Guest</option>
-                                        <option value="2 Guest">2 Guest</option>
-                                        <option value="4 Guest">4 Guest</option>
-                                        <option value="6 Guest">6 Guest</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-12">
-                                    <button class="btn btn_ku" type="submit">Book Now</button>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
             </div>
-            <!-- img header -->
-            <div class="col-lg-6">
-                <div class="row heder-img ">
-                    <div class="col-lg-6">
-                        <img
-                            data-aos="fade-down"
-                            class="mb-4"
-                            src="<?= base_url('assets/img/room.png'); ?>"
-                            width="100%"
-                            alt="picture">
-                        <img
-                            data-aos="fade-right"
-                            src="<?= base_url('assets/img/window.png'); ?>"
-                            alt="picture"
-                            width="100%">
-
-                    </div>
-                    <div class="col-lg-6 hiden" data-aos="fade-up">
-                        <img
-                            style="margin-top:100px"
-                            src="<?= base_url('assets/img/loby.png'); ?>"
-                            alt="picture"
-                            width="100%">
-                    </div>
+            <!-- conten box boking header -->
+            <div
+                data-aos="fade-up-left"
+                class="head-content-box-boking shadow px-4 py-4  bg-body-tertiary rounded">
+                <div class="d-flex">
+                    <h5 class="change">Rp. 7.000.000</h5>
+                    <span>/month</span>
+                </div>
+                <div class="form-header-input-boking">
+                    <?php $date = date("Y-m-d");?>
+                    <form action="/save">
+                        <div class="form">
+                            <div class="form-input-checkin">
+                                <label for="checkin" class="checkin-label">Chek In</label>
+                                <input
+                                    type="date"
+                                    class="form-control-plaintext checkin-input"
+                                    placeholder="<?= $date; ?>"
+                                    value="<?= $date; ?>"
+                                    name="checkin"
+                                    id="checkin">
+                            </div>
+                            <div class="form-input-checkout">
+                                <label for="checkout" class="checkout-label">Chek Out</label>
+                                <input
+                                    type="date"
+                                    placeholder="<?= $date; ?>"
+                                    value="<?= $date; ?>"
+                                    class="form-control-plaintext checkout-input"
+                                    name="checkout"
+                                    id="checkin">
+                            </div>
+                        </div>
+                        <div class="room-tipe">
+                            <label class="form-label" for="room-type">Room Type :</label>
+                            <select class="form-control-plaintext" name="room-type" id="room-type">
+                                <option value="Deluxe Room">Deluxe Room</option>
+                                <option value="Superior Room">Superior Room</option>
+                            </select>
+                        </div>
+                        <div class="guest-member">
+                            <label class="form-label fw-bold" for="guest-member">Guest Member</label>
+                            <input
+                                type="text"
+                                name="guest-member"
+                                placeholder="Write Hire.."
+                                id="guest-member"
+                                class="form-control-plaintext form-input">
+                        </div>
+                        <button class="order" type="submit">Book Now</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- end header section -->
-
-    <!-- rooms section -->
-    <section  id="rooms" style="height: 100vh;">
-        <div class="row">
-            <h3 data-aos="fade-down-left" class="fw-bold mb-3">Rooms Katalog</h3>
-            <div class="col-lg-6">
-                <div class="card" data-aos="fade-left">
+        <div class="col-lg-6 conten-header">
+            <div class="row img-conten-header ">
+                <div class="col-lg-6">
                     <img
+                        data-aos="fade-down"
+                        class="mb-4 img-content-1"
                         src="<?= base_url('assets/img/room.png'); ?>"
-                        class="card-img-top rounded-top"
-                        alt="picture"
-                        height="300px">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <span class="fw-bold">$200</span>
-                                <span class="grey">
-                                    /night</span>
-                            </div>
-                            <div class="col-lg-6 text-end">
-                                <i class="bi bi-star-fill star"></i>
-                                <span class="fw-bold ret">4.9</span>
-                                <span class="grey">
-                                    (122)</span>
-                            </div>
-                        </div>
-                        <span class="card-text pt-3 grey">Entire cabin · 1 beds</span>
-                        <h5 class="card-title fw-bold py-3">Deluxe Room</h5>
-                        <span class="grey">
-                            <i class="bi bi-geo-alt"></i>
-                            Agung Guest House</span><br>
-                        <a href="<?= base_url('/rooms'); ?>" class="btn btn_m fw-bold">Explore
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card rounded-top" data-aos="fade-right">
+                        alt="picture">
                     <img
+                        class="img-content-2"
+                        data-aos="fade-right"
                         src="<?= base_url('assets/img/window.png'); ?>"
-                        class="card-img-top"
-                        alt="picture"
-                        height="300px">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <span class="fw-bold">$200</span>
-                                <span class="grey">
-                                    /night</span>
-                            </div>
-                            <div class="col-lg-6 text-end">
-                                <i class="bi bi-star-fill star"></i>
-                                <span class="fw-bold ret">4.9</span>
-                                <span class="grey">
-                                    (122)</span>
-                            </div>
-                        </div>
-                        <span class="card-text pt-3 grey">Entire cabin · 1 beds</span>
-                        <h5 class="card-title fw-bold py-3">Superior Room</h5>
-                        <span class="grey">
-                            <i class="bi bi-geo-alt"></i>
-                            Agung Guest House</span><br>
-                        <a href="<?= base_url('/rooms'); ?>" class="btn btn_m fw-bold">Explore
-                        </a>
-                    </div>
+                        alt="picture">
+
+                </div>
+                <div class="col-lg-6 hiden" data-aos="fade-up">
+                    <img
+                        class="img-content-3"
+                        src="<?= base_url('assets/img/loby.png'); ?>"
+                        alt="picture">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</header>
 
-    <!-- end section rooms -->
-
-    <!-- Section binefits -->
-
-    <section id="benefits" style="height: 100vh; padding:50px 0px;">
-        <div class="row">
-            <div class="col-lg-6" data-aos="fade-left">
-                <img
-                    src="<?= base_url('assets/img/frot_view.png'); ?>"
-                    alt="Pictre"
-                    class=""
-                    style="width: 100%;  height: 80vh; border-radius:  0px 50% 0 0;">
+<section id="room-katalog">
+    <div class="room-katalog-title">
+        <h2 class="title">Rooms Katalog</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-6  room-list-content">
+            <div class="box-list-content-img shadow bg-body-tertiary rounded">
+                <img class="rounded-top img" src="<?= base_url('assets/img/room.png'); ?>" alt="picture">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <span class="count">Rp 7,000,000</span>
+                            <span class="secondary">/night</span>
+                        </div>
+                        <div class="col-lg-6 text-end">
+                            <i class="bi bi-star-fill star"></i>
+                            <span class="fw-bold rete">4.9</span>
+                            <span class="secondary">(122)</span>
+                        </div>
+                    </div>
+                    <span class="card-text pt-3 grey">Entire cabin · 1 beds</span>
+                    <h5 class="card-title fw-bold py-3">Deluxe Room</h5>
+                    <span class="secondary">
+                        <i class="bi bi-geo-alt"></i>
+                        Agung Guest House</span><br>
+                    <a href="<?= base_url('/rooms'); ?>" class="btn buton-order">Explore
+                    </a>
+                </div>
             </div>
+        </div>
+        <div class="col-lg-6  room-list-content">
+        <div class="box-list-content-img shadow bg-body-tertiary rounded">
+                <img class="rounded-top img" src="<?= base_url('assets/img/window.png'); ?>" alt="picture">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <span class="count">Rp 7,000,000</span>
+                            <span class="secondary">/night</span>
+                        </div>
+                        <div class="col-lg-6 text-end">
+                            <i class="bi bi-star-fill star"></i>
+                            <span class="fw-bold rete">4.9</span>
+                            <span class="secondary">(122)</span>
+                        </div>
+                    </div>
+                    <span class="card-text pt-3 grey">Entire cabin · 1 beds</span>
+                    <h5 class="card-title fw-bold py-3">Superior Room</h5>
+                    <span class="secondary">
+                        <i class="bi bi-geo-alt"></i>
+                        Agung Guest House</span><br>
+                    <a href="<?= base_url('/rooms'); ?>" class="btn buton-order">Explore
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div class="col-lg-6" style="padding-left:80px;">
-                <h2
-                    data-aos="fade-lrft"
-                    class="mb-4 fw-bold"
-                    style="font-size:50px; line-height: 40px; text-transform:capitalize;">Benefits of using
-                    <br>
-                    our services
-                </h2>
-
+<section id="benefits-at-room">
+    <div class="row">
+        <div class="col-lg-6 conten-benefit">
+            <img src="<?= base_url('assets/img/frot_view.png'); ?>" alt="picture" class="conten-benefit-img">
+        </div>
+        <div class="col-lg-6 conten-benefit">
+            <h2 data-aos="fade-lrft" class="conten-benefit-title">Benefits of using <br> our services </h2>
                 <!-- Benefit 1 -->
-                <div class="m-benefit" data-aos="fade-up">
-                    <div class="benefit">
+                <div class="conten-benefit-lists" data-aos="fade-up">
+                    <div class="conten-benefit-list">
                         <div class="circle">
-                            <span class="benefit-number">01</span>
+                            <span class="conten-benefit-list-nuber">01</span>
                             <div class="quadrant quadrant3"></div>
                         </div>
-                        <div>
-                            <div class="list-benefite">
-                                <p class="benefit-title">Complete
-                                    <br>
-                                    Facilities & Free Wifi
-                                </p>
-                                <p class="benefit-description">We provide a smart TV, refrigerator, free mineral water, save box and free wifi.</p>
+                        <div class="conten-benefit-descritions">
+                            <div class="conten-benefit-descrition">
+                                <p class="conten-benefit-descrition-title">Complete <br> Facilities & Free Wifi</p>
+                                <p class="conten-benefit-descrition-text">We provide a smart TV, refrigerator, free mineral water, save box and free wifi.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="m-benefit" data-aos="fade-up-right">
-                    <div class="benefit">
+                <div class="conten-benefit-lists" data-aos="fade-up">
+                    <div class="conten-benefit-list">
                         <div class="circle">
-                            <span class="benefit-number">02</span>
-                            <div class="quadrant quadrant3"></div>
+                            <span class="conten-benefit-list-nuber">02</span>
+                            <div class="quadrant quadrant3"></div>x
                         </div>
-                        <div>
-                            <div class="list-benefite">
-                                <p class="benefit-title">Strategic
-                                    <br>
-                                    Location
-                                </p>
-                                <p class="benefit-description">You can easily access other famous spot like
-                                    Brawa beach, canggu, and we just 45 minutes from the airport.</p>
+                        <div class="conten-benefit-descritions left">
+                            <div class="conten-benefit-descrition">
+                                <p class="conten-benefit-descrition-title">Strategic Location</p>
+                                <p class="conten-benefit-descrition-text">You can easily access other famous spot like Brawa beach, canggu, and we just 45 minutes from the airport.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="m-benefit" data-aos="fade-up-left">
-                    <div class="benefit">
+                <div class="conten-benefit-lists" data-aos="fade-up">
+                    <div class="conten-benefit-list">
                         <div class="circle">
-                            <span class="benefit-number">03</span>
+                            <span class="conten-benefit-list-nuber">03</span>
                             <div class="quadrant quadrant3"></div>
                         </div>
-                        <div>
-                            <div class="list-benefite">
-                                <p class="benefit-title">Free Electicity</p>
-                                <p class="benefit-description">free electricity up to Rp. 500K per month</p>
+                        <div class="conten-benefit-descritions">
+                            <div class="conten-benefit-descrition">
+                                <p class="conten-benefit-descrition-title">Free Electicity</p>
+                                <p class="conten-benefit-descrition-text">free electricity up to Rp. 500K per month</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Section Testimonial -->
-    <section
-        id="testimonial"
-        style="background: #FFF7ED; border-radius: 20px; height: 100vh; padding:100px; ">
+    </div>
+</section>
+<section id="testimonial">
         <h2 class="fw-bold text-center" data-aos="fade-up">Testimonial</h2>
         <p class="text-center grey" data-aos="fade-up">Our customer, that satisfied with us</p>
         <div class="row">
@@ -317,8 +284,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-</div>
-
+    </section>
 <?= $this->EndSection(); ?>
