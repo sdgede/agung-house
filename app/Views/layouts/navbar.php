@@ -14,9 +14,9 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <!-- Centered Menu -->
       <ul class="navbar-nav mx-auto navb-link">
-        <li class="nav-item fs-5"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item fs-5"><a class="nav-link" href="#rooms">Rooms</a></li>
-        <li class="nav-item fs-5"><a class="nav-link" href="#benefits">Benefits</a></li>
+        <li class="nav-item fs-5"><a class="nav-link" href="#header">Home</a></li>
+        <li class="nav-item fs-5"><a class="nav-link" href="#room-katalog">Rooms</a></li>
+        <li class="nav-item fs-5"><a class="nav-link" href="#benefits-at-room">Benefits</a></li>
         <li class="nav-item fs-5"><a class="nav-link" href="#testimonial">Testimonial</a></li>
       </ul>
       

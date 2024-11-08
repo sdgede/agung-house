@@ -7,9 +7,8 @@ class Home extends BaseController
     public function index(): string
     {
         $data = [
-            'nav_selected' => '1'
+            'nav_selected' => '1',
         ];
-
         return view('content/index', $data);
     }
 
