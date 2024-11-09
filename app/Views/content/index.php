@@ -1,6 +1,5 @@
 <?= $this->extend('layouts/template'); ?>
 <?= $this->Section('content'); ?>
-
 <header id="header">
     <div class="row">
         <div class="col-lg-6 conten-header">

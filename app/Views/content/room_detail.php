@@ -2,7 +2,7 @@
 <?= $this->Section('content'); ?>
 <div class="container-fluid">
     <!-- Room Image -->
-    <section class="rooms-images ">
+    <section class="rooms-images" style="margin-top:5rem;">
         <div class="row">
             <div class="col-lg-7 p-1 pt-0" data-aos="fade-right">
                 <div class="card-image">
