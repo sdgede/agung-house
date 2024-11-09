@@ -1,8 +1,7 @@
 <?= $this->extend('layouts/template'); ?>
 <?= $this->Section('content'); ?>
 
-<div class="container mt-5">
-
+<div class="container" style="margin-top:5rem;">
     <!-- header Section -->
     <header id="header" style="height: 100vh;">
         <div class="row">
