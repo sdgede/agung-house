@@ -1,8 +1,8 @@
 <?= $this->extend('layouts/template'); ?>
 <?= $this->Section('content'); ?>
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top: 4rem;">
     <!-- Room Image -->
-    <section class="rooms-images" style="margin-top:5rem;">
+    <section class="rooms-images">
         <div class="row">
             <div class="col-lg-7 p-1 pt-0" data-aos="fade-right">
                 <div class="card-image">
@@ -50,7 +50,7 @@
     <!-- End Room Image -->
 
     <!-- Main -->
-    <section class="rooms-main ">
+    <section class="rooms-main">
         <div class="row rooms-main-row">
             <div class="col-lg-7">
                 <div class="row">
@@ -199,42 +199,37 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="card-footer">
-                        <button class="more-amenities-btn">
-                            View more 20 amenities
-                        </button>
-                    </div>
-                </div>
-                <!-- Room Rates -->
-                <div class="card" data-aos="fade-up">
-                    <div class="card-header amenities-header">
-                        <h5 class="stay-info-title m-0">Room Rates</h5>
-                        <p class="m-0">Prices may increase on weekends or holidays</p>
-                    </div>
-                    <div class="card-body">
-                        <hr class="m-0" style="width: 65px;">
-                        <div class="room-rate-list">
-                            <div class="col-lg-12 active">
-                                <span>Daily</span>
-                                <span>$554</span>
+                    <!-- Room Rates -->
+                    <div class="col-lg-12">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-header amenities-header">
+                                <h5 class="stay-info-title m-0">Room Rates</h5>
+                                <p class="m-0">Prices may increase on weekends or holidays</p>
                             </div>
-                            <div class="col-lg-12">
-                                <span>Monthly</span>
-                                <span>$554</span>
-                            </div>
-                            <div class="col-lg-12 active">
-                                <span>Weekly</span>
-                                <span>$554</span>
-                            </div>
-                            <div class="col-lg-12">
-                                <span>Yearly</span>
-                                <span>$554</span>
-                            </div>
-                            <div class="col-lg-12 active">
-                                <span>Long Term</span>
-                                <span>$554</span>
-             
+                            <div class="card-body">
+                                <hr class="m-0" style="width: 65px;">
+                                <div class="room-rate-list">
+                                    <div class="col-lg-12 active">
+                                        <span>Daily</span>
+                                        <span>$554</span>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <span>Monthly</span>
+                                        <span>$554</span>
+                                    </div>
+                                    <div class="col-lg-12 active">
+                                        <span>Weekly</span>
+                                        <span>$554</span>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <span>Yearly</span>
+                                        <span>$554</span>
+                                    </div>
+                                    <div class="col-lg-12 active">
+                                        <span>Empty Field</span>
+                                        <span>$554</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-footer"></div>
                         </div>
