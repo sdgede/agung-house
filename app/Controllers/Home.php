@@ -2,14 +2,25 @@
 
 namespace App\Controllers;
 
+use App\Models\ReviewModel;
+use App\Models\RoomModel;
+
 class Home extends BaseController
 {
     public function index(): string
     {
+        $roomModel = new RoomModel();
+        $reviewModel = new ReviewModel();
+        $rooms = $roomModel-> where('id_room', 1 );
+
+        // dd($rooms);
         $data = [
             'nav_selected' => '1',
         ];
-        return view('content/index', $data);
+        return view('content/index',[
+            'data' => $data,
+            'rooms' => $rooms
+         ]);
     }
 
     public function room_detail()

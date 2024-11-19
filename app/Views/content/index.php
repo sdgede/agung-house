@@ -1,5 +1,7 @@
 <?= $this->extend('layouts/template'); ?>
 <?= $this->Section('content'); ?>
+
+
 <header id="header">
     <div class="row">
         <div class="col-lg-6 conten-header">
@@ -16,7 +18,7 @@
                 data-aos="fade-up-left"
                 class="head-content-box-boking shadow px-4 py-4  bg-body-tertiary rounded">
                 <div class="d-flex">
-                    <h5 class="change">Rp. 7.000.000</h5>
+                    <h5 class="change">7,000,000</h5>
                     <span>/month</span>
                 </div>
                 <div class="form-header-input-boking">
