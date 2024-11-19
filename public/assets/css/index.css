@@ -1,8 +1,9 @@
 /* Public Css */
-input::-webkit-calendar-picker-indicator {
+/* input::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
-}
+} */
+ 
  select{
     -webkit-appearance: none; /* Menghilangkan panah di Chrome, Safari, dan Edge */
     -moz-appearance: none; /* Menghilangkan panah di Firefox */
@@ -180,11 +181,23 @@ input::-webkit-calendar-picker-indicator {
     > .head-content-box-boking
     > .form-header-input-boking
     > form
-    > .room-tipe{
+    > .room-type{
         border: 1px solid grey;
         padding: 5px 20px;
-        display: flex;
         font-size: 12px;
+        font-weight: bold;
+    }
+
+    #header 
+    > .row
+    > .conten-header
+    > .head-content-box-boking
+    > .form-header-input-boking
+    > form
+    > .room-type
+    > .input-room-type
+    > input{
+       margin: 0 10px;
     }
 
     #header 
@@ -207,9 +220,43 @@ input::-webkit-calendar-picker-indicator {
     > .guest-member{
         font-size: 14px;
         line-height: 10px;
+        height: 50px;
         border: solid 1px grey;
-        padding: 10px 0 0 20px;
+        padding: 20px 0 0 20px;
         border-radius: 0 0 15px 15px;
+    }
+    #header 
+    > .row
+    > .conten-header
+    > .head-content-box-boking
+    > .form-header-input-boking
+    > form
+    > .guest-member
+    > select{
+        margin-left: 20px;
+        font-size: 14px;
+        border: none;
+        width: 200px;
+        outline: none;
+        border-radius: 10px ;
+    }
+    #header 
+    > .row
+    > .conten-header
+    > .head-content-box-boking
+    > .form-header-input-boking
+    > form
+    > .guest-member
+    > select
+    > option{
+        font-size: 14px;
+        border: none;
+        width: 100px;
+        padding: 30px;
+        background: #fdc463;
+       
+        text-align: center;
+        border-bottom: 1px solid burlywood;
     }
     #header 
     > .row
