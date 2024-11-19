@@ -9,6 +9,11 @@
                     <a class="navbar-brand fw-bold fs-6" href="#">Agung Guest House</a>
                 </div>
                 <div class="box9">
+                <span class="secondary">
+                        <i class="bi bi-geo-alt"></i>
+                        Agung Guest House</span>
+                </div>
+                <div class="box9">
                     <i class="fab fa-facebook"></i>
                     <a class="navbar-brand fs-7" href="#">Facebook</a>
 
@@ -48,7 +53,7 @@
         </div>
     </div>
 </section>
-<section id="copiright" c>
+<section id="copiright" >
     <h4> &copy; Copyright </h4>
 </section>
 
