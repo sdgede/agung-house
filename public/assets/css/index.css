@@ -3,482 +3,556 @@
     display: none;
     -webkit-appearance: none;
 } */
- 
- select{
-    -webkit-appearance: none; /* Menghilangkan panah di Chrome, Safari, dan Edge */
-    -moz-appearance: none; /* Menghilangkan panah di Firefox */
-    appearance: none; /* Properti standar */
-    background: none; /* Menghilangkan background default */
- }
- 
- /* Container utama lingkaran */
+
+select {
+  -webkit-appearance: none; /* Menghilangkan panah di Chrome, Safari, dan Edge */
+  -moz-appearance: none; /* Menghilangkan panah di Firefox */
+  appearance: none; /* Properti standar */
+  background: none; /* Menghilangkan background default */
+}
+
+/* Container utama lingkaran */
 .circle {
-    width: 90px;
-    height:90px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Setiap kuadran */
-  .quadrant {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-  }
-  .quadrant3 {
-    z-index: 1;
-    background-color: #fdc463;
-    bottom: 0;
-    left: 0;
-  }
- 
- .secondary{
-    color: gray;
- }
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
 
+/* Setiap kuadran */
+.quadrant {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+.quadrant3 {
+  z-index: 1;
+  background-color: #fdc463;
+  bottom: 0;
+  left: 0;
+}
 
+.secondary {
+  color: gray;
+}
+
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 2px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 2px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
 /* Header Css */
-#header{
-    height: 100vh;
-    padding: 50px 0;
-    /* border: #fdc463 1px solid; */
+#header {
+  height: 100vh;
+  padding: 50px 0;
+  /* border: #fdc463 1px solid; */
 }
 
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-text
-    > .text-heading{
-        text-transform: capitalize;
-        font-size: 40px;
-        font-weight: bold;
-        margin-left: 20px;
-        text-align: center;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    {
-        margin: 0 auto;
-        margin-top: 50px;
-        width: 400px; 
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .d-flex
-    > .change{
-        font-size: 30px;
-        font-weight: bold;
-        margin: 10px 0 0 10px;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .d-flex
-    > span{
-        margin-top: 20px;
-        color:grey;
-        font-size: 15px;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .form{
-        display: flex;
-        line-height: 10px;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .form
-    > .form-input-checkin{
-        border: 1px solid grey;
-        width: 200px;
-        margin-top: 10px;
-        padding: 10px 0;
-        border-radius: 15px 0 0 0 ;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .form
-    > .form-input-checkin 
-    > .checkin-label{
-        font-size: 14px;
-        font-weight: bold;
-        margin-left: 35%;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .form
-    > .form-input-checkin 
-    > .checkin-input{
-        font-size: 14px;
-        color: gray;
-        text-align: center;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .form
-    > .form-input-checkout{
-        border: 1px solid grey;
-        width: 200px;
-        margin-top: 10px;
-        padding: 10px 0;
-        border-radius: 0 15px 0 0 ;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .form
-    > .form-input-checkout 
-    > .checkout-label{
-        font-size: 14px;
-        font-weight: bold;
-        margin-left: 35%;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .form
-    > .form-input-checkout 
-    > .checkout-input{
-        font-size: 14px;
-        color: gray;
-        text-align: center;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .room-type{
-        border: 1px solid grey;
-        padding: 5px 20px;
-        font-size: 12px;
-        font-weight: bold;
-    }
-
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .room-type
-    > .input-room-type
-    > input{
-       margin: 0 10px;
-    }
-
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .room-tipe
-    > .form-label{
-        
-        font-weight: bold;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .guest-member{
-        font-size: 14px;
-        line-height: 10px;
-        height: 50px;
-        border: solid 1px grey;
-        padding: 20px 0 0 20px;
-        border-radius: 0 0 15px 15px;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .guest-member
-    > select{
-        margin-left: 20px;
-        font-size: 14px;
-        border: none;
-        width: 200px;
-        outline: none;
-        border-radius: 10px ;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .guest-member
-    > select
-    > option{
-        font-size: 14px;
-        border: none;
-        width: 100px;
-        padding: 30px;
-        background: #fdc463;
-       
-        text-align: center;
-        border-bottom: 1px solid burlywood;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-box-boking
-    > .form-header-input-boking
-    > form
-    > .order{
-        margin: 0 auto;
-        outline: none;
-        border: none;
-        background: #fdc463;
-        padding: 15px;
-        width: 360px;
-        border-radius: 15px;
-        margin-top: 10px;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .img-conten-header
-    img{
-        max-width: 100%;
-    }
-    #header 
-    > .row
-    > .conten-header
-    > .img-conten-header
-    > .hiden
-    > .img-content-3{
-        margin-top:50px ;
-    }
-
-#room-katalog{
-    padding: 100px;
-    }
-    #room-katalog
-    >.room-katalog-title
-    >.title{
-        font-size: 30px;
-        font-weight: bold;
-    }
-    #room-katalog
-    > .row
-    > .room-list-content
-    > .box-list-content-img
-    > .card-body{
-       padding: 20px;
-    }
-    #room-katalog
-    > .row
-    > .room-list-content
-    > .box-list-content-img
-    > .card-body
-    > .row
-    > .col-lg-6
-    > .count{
-       font-weight: bold;
-       font-size: 15px;
-    }
-    #room-katalog
-    > .row
-    > .room-list-content
-    > .box-list-content-img
-    > .card-body
-    > .row
-    > .col-lg-6
-    > .star{
-       color: #fdc463;
-       font-size: 14px;
-    }
-    #room-katalog
-    > .row
-    > .room-list-content
-    > .box-list-content-img
-    > .card-body
-    > .row
-    > .col-lg-6
-    > .rete{
-       font-size: 14px;
-    }
-    #room-katalog
-    > .row
-    > .room-list-content
-    > .box-list-content-img
-    > .card-body
-    > .buton-order{
-        margin-top: 10px;
-        width: 100%;
-        font-weight: bold;
-        background: #fdc463;
-    }
-    #room-katalog
-    > .row
-    > .room-list-content
-    > .box-list-content-img
-    > .img{
-        width: 100%;
-        height: 200px;
-    }
-
-
-#benefits-at-room{
-    /* border: #fdc463 solid 1px; */
-    padding: 100px;
+#header > .row > .conten-header > .head-content-text > .text-heading {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  text-align: center;
 }
-    #benefits-at-room
-    > .row
-    > .conten-benefit{
-        max-height: 500px;
-    }
-    #benefits-at-room
-    > .row
-    > .conten-benefit
-    > .conten-benefit-img{
-        border-radius: 0 40% 0 0;
-        height: 100%;
-        width: 320px;
-    }
-    #benefits-at-room
-    > .row
-    > .conten-benefit
-    > .conten-benefit-title{
-        font-weight: bold;
-        font-size: 40px;
-        margin: 15px 0;
-        text-transform: capitalize;
-    }
-    #benefits-at-room
-    > .row
-    > .conten-benefit
-    > .conten-benefit-lists
-    > .conten-benefit-list{
-        display: flex;
-        position: relative;
-        line-height: 20px;
-    }
-    #benefits-at-room
-    > .row
-    > .conten-benefit
-    > .conten-benefit-lists
-    > .conten-benefit-list
-    > .circle
-    > .conten-benefit-list-nuber{
-        left: 10px;
-        top: 20px;
-        position: absolute;
-        z-index: 9;
-        font-weight: bold;
-        font-size: 30px;
-        margin-top: 10px;
-        text-transform: capitalize;
-    }
-    #benefits-at-room
-    > .row
-    > .conten-benefit
-    > .conten-benefit-lists
-    > .conten-benefit-list
-    > .conten-benefit-descritions
-    > .conten-benefit-descrition
-    > .conten-benefit-descrition-title{
-        font-weight: bold;
-        font-size: 20px;
-        margin: 10px 0;
-    }
-    #benefits-at-room
-    > .row
-    > .conten-benefit
-    > .conten-benefit-lists
-    > .conten-benefit-list
-    > .conten-benefit-descritions
-    > .conten-benefit-descrition
-    > .conten-benefit-descrition-text{
-        font-size: 12px;
-        line-height: 20px;
-        margin-left: 10px;
-    }
-    #benefits-at-room
-     .left
-     {
-        margin-left: 30px;
-    }
+#header > .row > .conten-header > .head-content-box-boking {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 400px;
+}
+#header > .row > .conten-header > .head-content-box-boking > .d-flex > .change {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fdc463;
+  margin: 10px 0 0 10px;
+}
+#header > .row > .conten-header > .head-content-box-boking > .d-flex > span {
+  margin-top: 20px;
+  color: grey;
+  font-size: 15px;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .form {
+  display: flex;
+  line-height: 10px;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .form
+  > .form-input-checkin {
+  border: 1px solid grey;
+  width: 200px;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-radius: 15px 0 0 0;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .form
+  > .form-input-checkin
+  > .checkin-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 35%;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .form
+  > .form-input-checkin
+  > .checkin-input {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .form
+  > .form-input-checkout {
+  border: 1px solid grey;
+  width: 200px;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-radius: 0 15px 0 0;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .form
+  > .form-input-checkout
+  > .checkout-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 35%;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .form
+  > .form-input-checkout
+  > .checkout-input {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room-type {
+  display: flex;
+  border: 1px solid grey;
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
 
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room-type
+  > .input-room-type
+  > .op1 {
+  display: flex;
+}
+
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room-type
+  > .input-room-type
+  > .op1
+  > label {
+  margin-left: 10px;
+}
+
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room-type
+  > .form-label {
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room {
+  font-size: 14px;
+  line-height: 10px;
+  height: 50px;
+  border: solid 1px grey;
+  padding: 20px 0 0 20px;
+  display: flex;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room 
+  > .radio{
+  display: flex;
+  align-items: start;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room
+  > .form-label {
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room
+  > .radio
+  > label {
+  margin: 5px 20px 0 20px;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room
+  > .radio
+  > .room-radio::after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .room
+  > .radio
+  > .room-radio:checked:after  {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .guest-name {
+  font-size: 14px;
+  line-height: 10px;
+  height: 50px;
+  border: solid 1px grey;
+  padding: 20px 0 0 20px;
+  border-radius: 0 0 15px 15px;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .guest-name
+  > input {
+  font-size: 12px;
+  border: none;
+  outline: none;
+}
+#header
+  > .row
+  > .conten-header
+  > .head-content-box-boking
+  > .form-header-input-boking
+  > form
+  > .order {
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  background: #fdc463;
+  padding: 15px;
+  width: 360px;
+  border-radius: 15px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+#header > .row > .conten-header > .img-conten-header img {
+  max-width: 100%;
+}
+#header > .row > .conten-header > .img-conten-header > .hiden > .img-content-3 {
+  margin-top: 50px;
+}
+
+#room-katalog {
+  padding: 100px;
+}
+#room-katalog 
+> .room-katalog-title 
+> .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+#room-katalog 
+> .row 
+> .room-list-content 
+> .box-list-content-img 
+> .card-body {
+  padding: 20px;
+}
+#room-katalog
+  > .row
+  > .room-list-content
+  > .box-list-content-img
+  > .card-body
+  > .row
+  > .col-lg-6
+  > .count {
+  font-weight: bold;
+  font-size: 15px;
+}
+#room-katalog
+  > .row
+  > .room-list-content
+  > .box-list-content-img
+  > .card-body
+  > .row
+  > .col-lg-6
+  > .star {
+  color: #fdc463;
+  font-size: 14px;
+}
+#room-katalog
+  > .row
+  > .room-list-content
+  > .box-list-content-img
+  > .card-body
+  > .row
+  > .col-lg-6
+  > .rete {
+  font-size: 14px;
+}
+#room-katalog
+  > .row
+  > .room-list-content
+  > .box-list-content-img
+  > .card-body
+  > .buton-order {
+  margin-top: 10px;
+  width: 100%;
+  font-weight: bold;
+  background: #fdc463;
+}
+#room-katalog > .row > .room-list-content > .box-list-content-img > .img {
+  width: 100%;
+  /* height: 200px;S */
+}
+
+#benefits-at-room {
+  /* border: #fdc463 solid 1px; */
+  padding: 100px;
+}
+#benefits-at-room > .row > .conten-benefit {
+  max-height: 500px;
+}
+#benefits-at-room > .row > .conten-benefit > .conten-benefit-img {
+  border-radius: 0 40% 0 0;
+  height: 100%;
+  width: 320px;
+}
+#benefits-at-room > .row > .conten-benefit > .conten-benefit-title {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+#benefits-at-room
+  > .row
+  > .conten-benefit
+  > .conten-benefit-lists
+  > .conten-benefit-list {
+  display: flex;
+  position: relative;
+  line-height: 20px;
+}
+#benefits-at-room
+  > .row
+  > .conten-benefit
+  > .conten-benefit-lists
+  > .conten-benefit-list
+  > .circle
+  > .conten-benefit-list-nuber {
+  left: 10px;
+  top: 20px;
+  position: absolute;
+  z-index: 9;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+#benefits-at-room
+  > .row
+  > .conten-benefit
+  > .conten-benefit-lists
+  > .conten-benefit-list
+  > .conten-benefit-descritions
+  > .conten-benefit-descrition
+  > .conten-benefit-descrition-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+}
+#benefits-at-room
+  > .row
+  > .conten-benefit
+  > .conten-benefit-lists
+  > .conten-benefit-list
+  > .conten-benefit-descritions
+  > .conten-benefit-descrition
+  > .conten-benefit-descrition-text {
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+#benefits-at-room .left {
+  margin-left: 30px;
+}
 
 @media (max-width: 768px) {
-    #header 
-    > .row
-    > .conten-header
-    > .img-conten-header{
-       display: none;
-    }                      
-    #room-katalog{
-        padding: 50px;
-    }
+  #header > .row > .conten-header > .img-conten-header {
+    display: none;
+  }
+  #room-katalog {
+    padding: 50px;
+  }
 
-    #room-katalog
-    > .row
-    > .room-list-content{
-        margin: 10px 0;
-    }
+  #room-katalog > .row > .room-list-content {
+    margin: 10px 0;
+  }
 
-    #benefits-at-room{
-        padding: 50px;
-      
-    }
-    #benefits-at-room
-    > .row
-    > .conten-benefit
-    > .conten-benefit-img{
-        display: none;
-    }
+  #benefits-at-room {
+    padding: 50px;
+  }
+  #benefits-at-room > .row > .conten-benefit > .conten-benefit-img {
+    display: none;
+  }
 }
 @media (max-width: 468px) {
-    #header 
-    > .row
-    > .conten-header
-    > .head-content-text{
-        padding: 10% 0;
-        color :antiquewhite;
-        background-image: url('../img/room.png');
-        background-size: cover; 
-    }
+  #header > .row > .conten-header > .head-content-text {
+    padding: 10% 0;
+    color: antiquewhite;
+    background-image: url("../img/room.png");
+    background-size: cover;
+  }
+  #header > .row > .conten-header > .img-conten-header {
+    display: none;
+  }
+  #room-katalog {
+    padding: 10px;
+  }
+
+  #room-katalog > .row > .room-list-content {
+    margin: 10px 0;
+  }
+
+  #benefits-at-room {
+    padding: 10px;
+  }
+  #testimonial{
+    padding: 10px;
+  }
+  #benefits-at-room > .row > .conten-benefit > .conten-benefit-img {
+    display: none;
+  }
 }

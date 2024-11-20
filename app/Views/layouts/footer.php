@@ -72,6 +72,26 @@
         once: false // animasi hanya berjalan sekali
     });
 </script>
+
+<!-- harga  room setipa type -->
+<script>
+    // Ambil elemen untuk menampilkan harga
+    const priceElement = document.querySelector('.change');
+    
+    // Ambil semua radio button untuk room type
+    const roomTypeRadios = document.querySelectorAll('input[name="room-type"]');
+    
+    // Tambahkan event listener untuk setiap radio button
+    roomTypeRadios.forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            // Dapatkan harga dari data-price
+            const selectedPrice = event.target.getAttribute('data-price');
+            // Perbarui elemen harga
+            priceElement.textContent = selectedPrice;
+        });
+    });
+</script>
+
 </body>
 
 </html>
