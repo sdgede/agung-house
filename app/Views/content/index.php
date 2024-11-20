@@ -1,5 +1,22 @@
 <?= $this->extend('layouts/template'); ?>
 <?= $this->Section('content'); ?>
+<?php
+// Harga default untuk setiap tipe kamar
+$roomPrices = [
+    "Double Room With Terrace" => 7700,
+    "Twin Room" => 6800
+];
+
+// Default room type dan harga
+$selectedRoomType = "Double Room With Terrace";
+$selectedPrice = $roomPrices[$selectedRoomType];
+
+// Cek jika form dikirimkan
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['room-type'])) {
+    $selectedRoomType = $_POST['room-type'];
+    $selectedPrice = $roomPrices[$selectedRoomType] ?? 0;
+}
+?>
 <header id="header" style="margin-top: 4rem;">
     <div class="row">
         <div class="col-lg-6 conten-header">
@@ -16,15 +33,15 @@
                 data-aos="fade-up-left"
                 class="head-content-box-boking shadow px-4 py-4  bg-body-tertiary rounded">
                 <div class="d-flex">
-                    <h5 class="change">Rp 7,000,000</h5>
+                    <h5 class="change">Rp 8,000,000</h5>
                     <span>/month</span>
                 </div>
                 <div class="form-header-input-boking">
                     <?php $date = date("Y-m-d"); ?>
-                    <form action="/save">
+                    <form action="/save" method="post">
                         <div class="form">
                             <div class="form-input-checkin">
-                                <label for="checkin" class="checkin-label">Chek In</label>
+                                <label for="checkin" class="checkin-label">Check In</label>
                                 <input
                                     type="date"
                                     class="form-control-plaintext checkin-input"
@@ -34,7 +51,7 @@
                                     id="checkin">
                             </div>
                             <div class="form-input-checkout">
-                                <label for="checkout" class="checkout-label">Chek Out</label>
+                                <label for="checkout" class="checkout-label">Check Out</label>
                                 <input
                                     type="date"
                                     placeholder="<?= $date; ?>"
@@ -47,22 +64,31 @@
                         <div class="room-type">
                             <label class="form-label" for="room-type">Room Type :</label>
                             <div class="input-room-type">
-                                <input type="radio" name="room-type" id="room-1" value="Deluxe Room">
-                                <label for="room-1">Deluxe Room</label>
-                                <input type="radio" name="room-type" id="room-2" value="Superior Room">
-                                <label for="room-2">Superior Room</label>
+                                <div class="op1">
+                                    <input type="radio" name="room-type" id="room-1" value="Double Room With Terrace" data-price="Rp 10,000,000" required>
+                                    <label for="room-1"> Double Room With Terrace</label>
+                                </div>
+                                <div class="op1">
+                                    <input type="radio" name="room-type" id="room-2" value="Twin Room" data-price="Rp 8,000,000" required>
+                                    <label for="room-2"> Twin Room </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room">
+                            <label class="form-label" for="room-type">Room :</label>
+                            <div class="radio">
+                                <input type="radio" class="room-radio" name="room" id="adults" required>
+                                <label for="adults">Adults</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="room-radio" name="room" id="cildren" required>
+                                <label for="cildren">Cildren</label>
                             </div>
                         </div>
 
-                        <div class="guest-member">
-                            <label class="form-label fw-bold" for="guest-member">Guest Member :</label>
-                           <select name="gust-member" id="guest">
-                            <option value="1 Guuest">1 Guest</option>
-                            <option value="2 Guuest">2 Guest</option>
-                            <option value="3 Guuest">3 Guest</option>
-                            <option value="4 Guuest">4 Guest</option>
-                            <option value="5 Guuest">5 Guest</option>
-                           </select>
+                        <div class="guest-name">
+                            <label class="form-label fw-bold" for="guest-name">Guest Name :</label>
+                            <input type="text" name="guest-name" id="guest-name" placeholder="Enter Your Name" required>
                         </div>
                         <button class="order" type="submit">Book Now</button>
                     </form>
@@ -97,17 +123,17 @@
 
 <section id="room-katalog">
     <div class="room-katalog-title">
-        <h2 class="title">Rooms Katalog</h2>
+        <h2 class="title">Rooms</h2>
     </div>
     <div class="row">
-        <div class="col-lg-6  room-list-content">
+        <div class="col-lg-6  room-list-content" data-aos="zoom-in">
             <div class="box-list-content-img shadow bg-body-tertiary rounded">
-                <img class="rounded-top img" src="<?= base_url('assets/img/room.png'); ?>" alt="picture">
+                <img class="rounded-top img" src="<?= base_url('assets/img/double.png'); ?>" alt="picture">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-6">
-                            <span class="count">Rp 7,000,000</span>
-                            <span class="secondary">/night</span>
+                            <span class="count">Rp 10,000,000</span>
+                            <span class="secondary">/moth</span>
                         </div>
                         <div class="col-lg-6 text-end">
                             <i class="bi bi-star-fill star"></i>
@@ -115,8 +141,8 @@
                             <span class="secondary">(122)</span>
                         </div>
                     </div>
-                    <span class="card-text pt-3 grey">Entire cabin · 1 beds</span>
-                    <h5 class="card-title fw-bold py-3">Deluxe Room</h5>
+                    <span class="card-text pt-3 secondary"> 1 Large Double Bed</span>
+                    <h5 class="card-title fw-bold py-3">Double Room With Terrace</h5>
                     <span class="secondary">
                         <i class="bi bi-geo-alt"></i>
                         Agung Guest House</span><br>
@@ -125,14 +151,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6  room-list-content">
+        <div class="col-lg-6  room-list-content" data-aos="zoom-in">
             <div class="box-list-content-img shadow bg-body-tertiary rounded">
-                <img class="rounded-top img" src="<?= base_url('assets/img/window.png'); ?>" alt="picture">
+                <img class="rounded-top img" src="<?= base_url('assets/img/twin.png'); ?>" alt="picture">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-6">
-                            <span class="count">Rp 7,000,000</span>
-                            <span class="secondary">/night</span>
+                            <span class="count">Rp 8,000,000</span>
+                            <span class="secondary">/month</span>
                         </div>
                         <div class="col-lg-6 text-end">
                             <i class="bi bi-star-fill star"></i>
@@ -140,8 +166,8 @@
                             <span class="secondary">(122)</span>
                         </div>
                     </div>
-                    <span class="card-text pt-3 grey">Entire cabin · 1 beds</span>
-                    <h5 class="card-title fw-bold py-3">Superior Room</h5>
+                    <span class="card-text pt-3 secondary">2 Single Beds</span>
+                    <h5 class="card-title fw-bold py-3"> Twin Room</h5>
                     <span class="secondary">
                         <i class="bi bi-geo-alt"></i>
                         Agung Guest House</span><br>

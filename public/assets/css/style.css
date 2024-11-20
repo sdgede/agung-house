@@ -26,11 +26,19 @@ body {
   border-radius: 8px;
 }
 
-nav ul li {
+nav ul li a {
   text-align: center;
+  text-decoration: none ;
+  color: #333;
+}
+nav ul li a:hover{
+  text-align: center;
+  text-decoration: none ;
+  color: #fdc463;
 }
 
-nav ul li .active {
+
+nav ul li  .active {
   background-color: #f3f4f6;
   margin: 0 20px;
   padding: 8px 50px;
@@ -43,6 +51,9 @@ nav ul li .nav-link {
   width: fit-content;
   padding: 8px 50px;
   border-radius: 40%;
+}
+nav a :hover {
+  color: #32d851;
 }
 
 .navb-link {
