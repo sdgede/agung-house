@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="<?= base_url('Font-Awesome/css/all.css') ?>">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
      <link rel="shortcut icon" href="<?= base_url('assets/img/logo.png'); ?>" type="image/x-icon">
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7/zK3DmjCBeGcz3xmrP6aU6NvlUgVBTZtS2B7HiN9Szr4lfm7R8D3xN6UAJD1l+5" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9jRMGh7bTYikQoW1+Z5JvjhaIS6LG/5Y0Q5Xb6jv20DX4gSkT0dn5z9" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
