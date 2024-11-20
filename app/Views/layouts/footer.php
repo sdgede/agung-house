@@ -58,18 +58,19 @@
 </section>
 
 
-
-
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= base_url('assets/js/bootstrap.bundle.js'); ?>"></script>
 <script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
 <script src="<?= base_url('AOS/src/js/aos.js'); ?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-AOS.init({
+    AOS.init({
 
-    duration: 1000, // durasi animasi dalam milidetik
-    once: false // animasi hanya berjalan sekali
-});
+        duration: 1000, // durasi animasi dalam milidetik
+        once: false // animasi hanya berjalan sekali
+    });
 </script>
 </body>
 
