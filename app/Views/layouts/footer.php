@@ -39,9 +39,6 @@
    </div>
 </footer>
 
-
-
-
 <!-- leaft js maps -->
 <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -64,6 +61,10 @@
       // Tambahkan marker
       L.marker(lokasiAwal).addTo(map).bindPopup("Agung Guest House").openPopup();
     </script>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= base_url('assets/js/bootstrap.bundle.js'); ?>"></script>
 <script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
 <script src="<?= base_url('AOS/src/js/aos.js'); ?>"></script>
