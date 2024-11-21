@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h3 class="type-room m-0">Deluxe Room</h3>
+                                <h3 class="type-room m-0">Double Room With Terrace</h3>
                                 <p class="m-0">
                                     <i class="fas fa-star rating-star"></i>
                                     4.9 <span>(122 riviews) - Jakarta, Indonesia</span>
