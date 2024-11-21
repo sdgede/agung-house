@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="<?= base_url('Font-Awesome/css/all.css') ?>">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
      <link rel="shortcut icon" href="<?= base_url('assets/img/logo.png'); ?>" type="image/x-icon">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- leaft js maps -->
+     <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
 </head>
 <body>
 

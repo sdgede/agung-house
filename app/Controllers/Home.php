@@ -49,6 +49,7 @@ class Home extends BaseController
         $message .= "Check-in Date: $checkin\n";
         $message .= "Check-out Date: $checkout\n";
         $message .= "Room Type: $roomtype\n";
+        $message .= "Room : $room\n";
         $message .= "My name: $guests\n\n";
         $message .= "Please let me know if any additional information is needed to complete the reservation process. I look forward to a pleasant stay at Get's House. Thank you for your assistance.\n\n";
 
@@ -56,7 +57,7 @@ class Home extends BaseController
           // Kodekan pesan untuk URL
           $encoded_message = urlencode($message);
 
-          dd($message);
+        //   dd($message);
           
           // Buat URL WhatsApp
           $wa_url = "https://api.whatsapp.com/send?phone=$no_admin&text=$encoded_message";

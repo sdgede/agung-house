@@ -1,85 +1,90 @@
-<hr>
-<section id="footer">
-    <div class="container">
+<footer>
+    <div class="container col-md-12 mx-auto p-5">
         <div class="row">
-            <div class="col-lg-3">
-                <div class="box10">
-                    <img src="<?= base_url('assets/img/logo.png'); ?>" alt="">
-                    <span> </span>
-                    <a class="navbar-brand fw-bold fs-6" href="#">Agung Guest House</a>
-                </div>
-                <div class="box9">
-                <span class="secondary">
-                        <i class="bi bi-geo-alt"></i>
-                        Agung Guest House</span>
-                </div>
-                <div class="box9">
-                    <i class="fab fa-facebook"></i>
-                    <a class="navbar-brand fs-7" href="#">Facebook</a>
-
-                </div>
-                <div class="box9">
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <a class="navbar-brand fs-7" href="#">Twiter</a>
-                </div>
-
-
-                <div class="box9">
-                    <i class="fab fa-instagram"></i>
-                    <a class="navbar-brand fs-7" href="#">Facebok</a>
-                </div>
-
-
-                <div class="box9">
-                    <i class="fab fa-youtube"></i>
-                    <a class="navbar-brand fs-7" href="#">Youtube</a>
+            <div class="col-lg-4">
+                <img src="<?= base_url('assets/img/logo.png'); ?>" alt="">
+                <span> </span>
+                <a class="navbar-brand fw-bold fs-5" href="#header">Agung Guest House</a>
+                <p>Providing lake views, The Symphony 9 Tam Coc in Ninh Binh provides accommodation, an outdoor swimming pool, a bar, a shared lounge, a garden and barbecue facilities. Complimentary WiFi is provided.</p>
+                <a href="<?= base_url('/rooms'); ?>" class="btn buton-order">Book Now
+                    </a>
+            </div>
+            <div class="col-lg-4">
+                <div class="social-media">
+                    <div class="facebok">
+                        <a href="#"><i class="bi bi-facebook"></i> <span>agunghouse</span></a>
+                    </div>
+                    <div class="youtube">
+                        <a href="#"><i class="bi bi-youtube"></i> <span>Agung House</span></a>
+                    </div>
+                    <div class="twit">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i> <span>@agunghouse</span> </a>
+                    </div>
+                    <div class="ig">
+                        <a href="https://www.instagram.com/megd.idr/?hl=id"><i class="bi bi-instagram"></i> <span>@agungGuesthouse</span></a>
+                    </div>
+                    <div class="ig">
+                        <a href=""><i class="bi bi-geo"></i> <span>Jl. Umalas</span></a>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
+                <div id="map"></div>
             </div>
-            <div class="col-lg-6 footer-location">
-                <h4 class="text-center mb-3">Location</h4>
-                <!-- <p class="text-center mb-4">Find us at:</p> -->
-                <div class="iframe-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d246.51503045125406!2d115.16453023354784!3d-8.668664746143921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1730431749168!5m2!1sid!2sid"
-                        width="100%" height="270px" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-
-
         </div>
     </div>
-</section>
-<section id="copiright" >
-    <h4> &copy; Copyright </h4>
-</section>
+    </div>
+   <div class="copyright">
+         <span>Production By Agung House</span><span>&copy; </span>
+   </div>
+</footer>
 
 
 
 
+<!-- leaft js maps -->
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <script>
+      // Koordinat lokasi awal
+      const lokasiAwal = [-8.6722646, 115.2078467]; // Contoh: Bali
+
+      // Buat peta
+      const map = L.map("map").setView(lokasiAwal, 13);
+
+      // Tambahkan layer peta dari OpenStreetMap
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "© OpenStreetMap contributors",
+      }).addTo(map);
+
+      // Tambahkan marker
+      L.marker(lokasiAwal).addTo(map).bindPopup("Agung Guest House").openPopup();
+    </script>
 <script src="<?= base_url('assets/js/bootstrap.bundle.js'); ?>"></script>
 <script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
 <script src="<?= base_url('AOS/src/js/aos.js'); ?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-AOS.init({
+    AOS.init({
 
-    duration: 1000, // durasi animasi dalam milidetik
-    once: false // animasi hanya berjalan sekali
-});
+        duration: 1000, // durasi animasi dalam milidetik
+        once: false // animasi hanya berjalan sekali
+    });
 </script>
 
 <!-- harga  room setipa type -->
 <script>
     // Ambil elemen untuk menampilkan harga
     const priceElement = document.querySelector('.change');
-    
+
     // Ambil semua radio button untuk room type
     const roomTypeRadios = document.querySelectorAll('input[name="room-type"]');
-    
+
     // Tambahkan event listener untuk setiap radio button
     roomTypeRadios.forEach(radio => {
         radio.addEventListener('change', (event) => {

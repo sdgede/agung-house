@@ -77,11 +77,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['room-type'])) {
                         <div class="room">
                             <label class="form-label" for="room-type">Room :</label>
                             <div class="radio">
-                                <input type="radio" class="room-radio" name="room" id="adults" required>
+                                <input type="radio" value="Adults" class="room-radio" name="room" id="adults" required>
                                 <label for="adults">Adults</label>
                             </div>
                             <div class="radio">
-                                <input type="radio" class="room-radio" name="room" id="cildren" required>
+                                <input type="radio" class="room-radio" value="Cildren" name="room" id="cildren" required>
                                 <label for="cildren">Cildren</label>
                             </div>
                         </div>
@@ -233,7 +233,168 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['room-type'])) {
     </div>
     </div>
 </section>
+
 <section id="testimonial">
+    <h2 class="fw-bold text-center" data-aos="fade-up">Testimonial</h2>
+    <p class="text-center grey" data-aos="fade-up">Our customer, that satisfied with us</p>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                                <div class="des-profile mx-auto row mb-4" style="width: 200px;">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="<?= base_url('assets/img/profile.jpeg'); ?>"
+                                            alt="picture"
+                                            class="profile">
+                                    </div>
+                                    <div class="col-lg-6 text-profil">
+                                        <span class="fw-bold">Ms. Chiki</span>
+                                        <br>
+                                        <i class="bi bi-star-fill rating-star"></i>
+                                        <span class="fw-bold ret">4.9</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    "I had an amazing stay at this guest house! The staff were incredibly friendly
+                                    and went out of their way to make me feel at home. The room was clean, spacious,
+                                    and had all the amenities I needed. Plus, the location is perfect—just a short
+                                    walk to local restaurants and shops. I would definitely stay here again!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                                <div class="des-profile mx-auto row mb-4" style="width: 200px;">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="<?= base_url('assets/img/profile.jpeg'); ?>"
+                                            alt="picture"
+                                            class="profile">
+                                    </div>
+                                    <div class="col-lg-6 text-profil">
+                                        <span class="fw-bold">Mr. Jhon</span>
+                                        <br>
+                                        <i class="bi bi-star-fill rating-star"></i>
+                                        <span class="fw-bold ret">5</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    The guest house was cozy and comfortable. The room was a bit smaller than I
+                                    expected, but it was well-maintained and had a nice, homey feel. The breakfast
+                                    was delicious, and I loved the garden area for relaxing. It’s a great place for
+                                    travelers who want a peaceful atmosphere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                                <div class="des-profile mx-auto row mb-4" style="width: 200px;">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="<?= base_url('assets/img/profile.jpeg'); ?>"
+                                            alt="picture"
+                                            class="profile">
+                                    </div>
+                                    <div class="col-lg-6 text-profil">
+                                        <span class="fw-bold">Sir. Baba</span>
+                                        <br>
+                                        <i class="bi bi-star-fill rating-star"></i>
+                                        <span class="fw-bold ret">4.9</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    "The guest house was okay, but not exactly what I expected. The room was clean,
+                                    but the walls were a bit thin, so I could hear noise from the other rooms. The
+                                    staff were nice, though, and the location was very central. It’s a decent place
+                                    if you're just looking for somewhere to sleep."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mx-auto" style="max-width: 90%;">
+                            <div class="card-body">
+                                <div class="des-profile mx-auto row mb-4" style="max-width: 200px;">
+                                    <div class="col-3">
+                                        <img src="<?= base_url('assets/img/profile.jpeg'); ?>" alt="profile picture" class="profile">
+                                    </div>
+                                    <div class="col-9 text-profil">
+                                        <span class="fw-bold">Ms. Chiki</span><br>
+                                        <i class="bi bi-star-fill rating-star"></i>
+                                        <span class="fw-bold ret">4.9</span>
+                                    </div>
+                                </div>
+                                <p class="card-text text-center">
+                                    "I had an amazing stay at this guest house! The staff were incredibly friendly..."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mx-auto" style="max-width: 90%;">
+                            <div class="card-body">
+                                <div class="des-profile mx-auto row mb-4" style="max-width: 200px;">
+                                    <div class="col-3">
+                                        <img src="<?= base_url('assets/img/profile.jpeg'); ?>" alt="profile picture" class="profile">
+                                    </div>
+                                    <div class="col-9 text-profil">
+                                        <span class="fw-bold">Mr. Jhon</span><br>
+                                        <i class="bi bi-star-fill rating-star"></i>
+                                        <span class="fw-bold ret">5</span>
+                                    </div>
+                                </div>
+                                <p class="card-text text-center">
+                                    "The guest house was cozy and comfortable..."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mx-auto" style="max-width: 90%;">
+                            <div class="card-body">
+                                <div class="des-profile mx-auto row mb-4" style="max-width: 200px;">
+                                    <div class="col-3">
+                                        <img src="<?= base_url('assets/img/profile.jpeg'); ?>" alt="profile picture" class="profile">
+                                    </div>
+                                    <div class="col-9 text-profil">
+                                        <span class="fw-bold">Sir. Baba</span><br>
+                                        <i class="bi bi-star-fill rating-star"></i>
+                                        <span class="fw-bold ret">4.9</span>
+                                    </div>
+                                </div>
+                                <p class="card-text text-center">
+                                    "The guest house was okay, but not exactly what I expected..."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- <section id="testimonial">
     <h2 class="fw-bold text-center" data-aos="fade-up">Testimonial</h2>
     <p class="text-center grey" data-aos="fade-up">Our customer, that satisfied with us</p>
     <div class="row">
@@ -313,5 +474,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['room-type'])) {
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <?= $this->EndSection(); ?>
