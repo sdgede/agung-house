@@ -51,8 +51,9 @@
 
     <!-- Main -->
     <section class="rooms-main">
+
         <div class="row rooms-main-row">
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <div class="row">
                     <!-- Room Information -->
                     <div class="col-lg-12">
@@ -282,26 +283,29 @@
                             </div>
                             <div class="card-body">
                                 <hr class="m-0" style="width: 65px;">
-                                <div class="form-group rating-group">
-                                    <div class="rating-widget">
-                                        <input type="radio" name="rate" id="rate-1">
-                                        <label for="rate-1" class="fas fa-star rating"></label>
-                                        <input type="radio" name="rate" id="rate-2">
-                                        <label for="rate-2" class="fas fa-star rating"></label>
-                                        <input type="radio" name="rate" id="rate-3">
-                                        <label for="rate-3" class="fas fa-star rating"></label>
-                                        <input type="radio" name="rate" id="rate-4">
-                                        <label for="rate-4" class="fas fa-star rating"></label>
-                                        <input type="radio" name="rate" id="rate-5" checked>
-                                        <label for="rate-5" class="fas fa-star rating"></label>
+                                <form action="/simpan" method="POST">
+                                    <div class="form-group rating-group">
+                                        <div class="rating-widget">
+                                            <input type="radio" name="rate" id="rate-1">
+                                            <label for="rate-1" class="fas fa-star rating"></label>
+                                            <input type="radio" name="rate" id="rate-2">
+                                            <label for="rate-2" class="fas fa-star rating"></label>
+                                            <input type="radio" name="rate" id="rate-3">
+                                            <label for="rate-3" class="fas fa-star rating"></label>
+                                            <input type="radio" name="rate" id="rate-4">
+                                            <label for="rate-4" class="fas fa-star rating"></label>
+                                            <input type="radio" name="rate" id="rate-5" checked>
+                                            <label for="rate-5" class="fas fa-star rating"></label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="riview-group">
-                                        <textarea name="input-riview" id="input-riview" placeholder="Share your thoughts ..." class="form-control"></textarea>
-                                        <button class="btn-submit-riview"><i class="fas fa-arrow-right"></i></button>
+                                    <div class="form-group">
+                                        <input name="name-re" id="input-riview" placeholder="enter your name.." class="form-control" required>
+                                        <div class="riview-group">
+                                            <textarea name="input-riview" id="input-riview" placeholder="Share your thoughts ..." class="form-control"></textarea>
+                                            <button type="submit" class="btn-submit-riview"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                                 <hr class="m-0">
                                 <div class="guest-riview">
                                     <img src="assets/img/profile.jpeg" alt="">
@@ -377,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Things To Know --> 
+                    <!-- Things To Know -->
                     <div class="col-lg-12">
                         <div class="card" data-aos="fade-up">
                             <div class="card-header amenities-header">
@@ -419,47 +423,57 @@
             </div>
 
             <!-- Col - 4 -->
-            <div class="col-lg-4">
+            <div class="col-lg-5">
                 <div class="card" data-aos="fade-up-left">
                     <div class="card-header">
                         <div class="room-price">
-                            <h3 class="type-room m-0">$200 <span>/night</span></h3>
+                            <h3 class="type-room m-0">Rp 8,000,000<span>/month</span></h3>
                             <p class="m-0">
                                 <i class="fas fa-star rating-star"></i>
                                 4.9 <span>(122 riviews)</span>
                             </p>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <div class="info-reservation">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <i class="far fa-calendar"></i>
-                                    <div class="check-in">
-                                        <span>Check In</span>
-                                        <h5 class="m-0">Aug 12</h5>
+                    <form action="/bokingd" method="POST">
+                        <div class="card-body">
+                            <div class="info-reservation">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="check-in">
+                                            <span>Check In</span>
+                                            <input id="datePicker" type="text"
+                                                name="checkind" placeholder="Select Date" class="custom-date-input" required>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <i class="far fa-calendar"></i>
-                                    <div class="check-out">
-                                        <span>Check Out</span>
-                                        <h5 class="m-0">Aug 18</h5>
+                                    <div class="col-lg-6">
+                                        <div class="check-out">
+                                            <span>Check Out</span>
+                                            <input id="datePicker" type="text"
+                                                name="checkoutd"
+                                                placeholder="Select  Date" class="custom-date-input" required>
+                                        </div>
                                     </div>
-                                </div>
-                                <hr>
-                                <div class="col-lg-6">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <div class="guests">
-                                        <span>Guests</span>
-                                        <h5 class="m-0">3 Guests</h5>
+                                    <hr>
+                                    <div class="col-lg-6">
+                                        <div class="guests">
+                                            <span>Guests</span>
+                                            <input type="text"
+                                                name="name"
+                                                class="m-0" placeholder="Enter Your Name..." required>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6">
+                                    <hr>
+                                    <div class="col-lg-12">
+                                        <div class="note">
+                                            <span>Note</span>
+                                            <textarea type="text"
+                                                name="note"
+                                                class="m-0 form-control" placeholder="Note For Me..." required></textarea>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="total-price">
+                            <!-- <div class="total-price">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="service">
@@ -492,16 +506,18 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://wa.me/6282147836034?test=Booking%20Deluxe%20Room" class="booking-wa-button">
-                            <i class="fab fa-whatsapp"></i>
-                            Book Now
-                        </a>
-                    </div>
+                        </div> -->
+                            <div class="card-footer">
+                                <button type="submit" class="booking-wa-button">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
+
     </section>
     <!-- Main -->
     <!-- </div> -->

@@ -7,7 +7,7 @@
                 <a class="navbar-brand fw-bold fs-5" href="#header">Agung Guest House</a>
                 <p>Providing lake views, The Symphony 9 Tam Coc in Ninh Binh provides accommodation, an outdoor swimming pool, a bar, a shared lounge, a garden and barbecue facilities. Complimentary WiFi is provided.</p>
                 <a href="<?= base_url('/rooms'); ?>" class="btn buton-order">Book Now
-                    </a>
+                </a>
             </div>
             <div class="col-lg-4">
                 <div class="social-media">
@@ -34,9 +34,9 @@
         </div>
     </div>
     </div>
-   <div class="copyright">
-         <span>Production By Agung House</span><span>&copy; </span>
-   </div>
+    <div class="copyright">
+        <span>Production By Agung House</span><span>&copy; </span>
+    </div>
 </footer>
 
 <!-- leaft js maps -->
@@ -45,22 +45,22 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
 
-    <script>
-      // Koordinat lokasi awal
-      const lokasiAwal = [-8.6722646, 115.2078467]; // Contoh: Bali
+<script>
+    // Koordinat lokasi awal
+    const lokasiAwal = [-8.6722646, 115.2078467]; // Contoh: Bali
 
-      // Buat peta
-      const map = L.map("map").setView(lokasiAwal, 13);
+    // Buat peta
+    const map = L.map("map").setView(lokasiAwal, 13);
 
-      // Tambahkan layer peta dari OpenStreetMap
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    // Tambahkan layer peta dari OpenStreetMap
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution: "© OpenStreetMap contributors",
-      }).addTo(map);
+    }).addTo(map);
 
-      // Tambahkan marker
-      L.marker(lokasiAwal).addTo(map).bindPopup("Agung Guest House").openPopup();
-    </script>
+    // Tambahkan marker
+    L.marker(lokasiAwal).addTo(map).bindPopup("Agung Guest House").openPopup();
+</script>
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
@@ -96,6 +96,16 @@
         });
     });
 </script>
+
+<!-- datePicker -->
+<script>
+    flatpickr("#datePicker", {
+        dateFormat: "d F Y", // Format: Tanggal Nama Bulan Tahun
+        altInput: true, // Input yang terlihat oleh user
+        altFormat: "d F Y", // Format yang ditampilkan
+    });
+</script>
+
 
 </body>
 
