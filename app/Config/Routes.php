@@ -8,6 +8,8 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/rooms', 'Home::room_detail');
 $routes->post('/save', 'Home::save');
+$routes->post('/bokingd', 'Home::bokingd');
+$routes->post('/simpan', 'Home::simpan');
 
 
 
