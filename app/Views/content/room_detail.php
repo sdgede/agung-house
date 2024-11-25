@@ -211,24 +211,12 @@
                                 <hr class="m-0" style="width: 65px;">
                                 <div class="room-rate-list">
                                     <div class="col-lg-12 active">
-                                        <span>Daily</span>
-                                        <span>$554</span>
+                                        <span>Double Room With Terrace</span>
+                                        <span>Rp 10,000,000</span>
                                     </div>
                                     <div class="col-lg-12">
-                                        <span>Monthly</span>
-                                        <span>$554</span>
-                                    </div>
-                                    <div class="col-lg-12 active">
-                                        <span>Weekly</span>
-                                        <span>$554</span>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <span>Yearly</span>
-                                        <span>$554</span>
-                                    </div>
-                                    <div class="col-lg-12 active">
-                                        <span>Empty Field</span>
-                                        <span>$554</span>
+                                        <span>Twin Room</span>
+                                        <span>Rp 8,000,000</span>
                                     </div>
                                 </div>
                             </div>
